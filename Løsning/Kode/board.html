@@ -1,7 +1,10 @@
  <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" href="board.css">
+	<link rel="alternate" href="board.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	
 	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Anton|Quicksand&display=swap" rel="stylesheet"> 
@@ -11,28 +14,50 @@
 <title>UBU board</title>
 </head>
 <body>
+<!-- MENU -->
+<div id="menu">
+	<div id="logo">
+		<p class="logoTitle">UBU</p>
+	</div>
+	<div class="vertical-menu">
+	  	<a class="#" href="#"><i class="fas fa-home"></i>Home</a>
+	  	<a href="#"><i class="fas fa-clipboard-check"></i>Board</a>
+	  	<a href="#"><i class="fas fa-envelope"></i>Kalender</a>
+	  	<a href="#"><i class="fas fa-user"></i>Bruker</a>
+	  	<a href="#"><i class="fas fa-user-friends"></i>Grupper</a>
+	  	<a href="#"><i class="fas fa-bug"></i>Report</a>
+	</div>
+</div>
+<!-- MENU END -->
+<!-- MAIN CONTENT -->
+<div class="container">
+	<div class="dropdown">
+	    <button class="dropdown" type="button" data-toggle="dropdown">
+			  <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+		  	<li class="dropdown-header"><i class="fas fa-caret-down"></i></li>
+	      	<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+	  	</ul>
+	</div>	
+	<div class="information">
+		<p id="Prosjekt_navn">Prosjekt Navn</p>	
+	</div>
+	<div class="box">
+		<p id="box1"></p>
+		<p id="box-generator"></p>
+		<p id="box2-generator"></p>
+		<button onclick="myFunction" id="add-generator">
+			<i class="fas fa-plus"></i>
+		</button>
+	</div>		
+</div>
+<!-- MAIN CONTENT END -->
+<!-- FOOTER -->
+<div id="footer"></div>
+	
 
-<h1>Prosjekt navn</h1>
-	
-<div class="vertical-menu">
-  <a class="#" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Board</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Kalender</a>
-  <a href="#"><i class="fa fa-fw fa-user"></i> Bruker</a>		
-</div>
-	
-<div class="box">
-	<p id="box1"></p>
-	<p id="Text1">UBU</p>
-	<p id="box-generator"></p>
-	<p id="box2-generator"></p>
-	<button onclick="myFunction" id="add-generator"><i class="fas fa-plus"></i></button>
-</div>
-	
-<div class="information">
-	<p id="Prosjekt_navn">Prosjekt Navn</p>
-	
-</div>
 	
 
 </body>
