@@ -135,7 +135,7 @@ a.article:hover {
 }
 
 .fa-users {
-    font-size: 180%;             /* icon size edit */
+    font-size: 180%;             /* icon (gruppe) size edit */
 }
 
 
@@ -148,6 +148,7 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    color: #006d9c;
 }
 
 #sidebarCollapse {                                     /*Content function, decides color*/
