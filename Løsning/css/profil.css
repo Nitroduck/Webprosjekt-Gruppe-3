@@ -190,16 +190,6 @@ hr{
 }
 
 
-/*.circle {
-    position: absolute;
-    top: 180px;
-    left: 250px;
-    height: 280px;
-    width: 280px;
-    background-color: lightgrey;
-    border-radius: 50%;
-}*/
-
 .fa-user-circle{
     position: absolute;
     left: 280px;
