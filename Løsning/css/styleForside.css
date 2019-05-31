@@ -45,16 +45,28 @@ html,body{
     border: 1px solid #ffffff;
 }
 
+a:link, a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    text-align: center;
+    background-color: #006d9c;
+}
+
+a:hover, a:active{
+    background-color: #02577c;
+}
+
 #loginBtn{
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 1200px;
-    background-color: #006d9c;
-    height: 30px;
     width: 70px;
     border: 1px solid #006d9c;
     border-radius: 25px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 #pic{
@@ -67,7 +79,7 @@ html,body{
 #illustration{
     left: 820px;
     height: 500px;
-    top: 100px;
+    top: 70px;
 }
 
 .text{
@@ -129,7 +141,7 @@ html,body{
     color: #ffffff;
     background-color: #006d9c;
     border: 1px solid #006d9c;
-    cursor: grab;
+    cursor: pointer;
 }
 
 
