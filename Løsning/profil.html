@@ -25,9 +25,7 @@
     
 
   </head>
-  <body>
-    
-        
+    <body>
             <div class="page-header">
             <h1>Min profil</h1>
             <hr>
@@ -36,8 +34,6 @@
             <div class="user-name">  
             <p>Kari Nordmann</p> 
             </div>
-
-            
         
             <i class="fas fa-user-circle"></i>
             
@@ -53,13 +49,11 @@
             <h2 class="level">Level</h2>
             <p class="info-3">Admin</p>
 
-            <div class="btn1">
-            <a href="editprofil.html" class="btnn btn-danger btn md" role="button">Rediger profil</a>
-            </div>
+            
 
             <!--[  navbar   ]-->
-    <div class="wrapper">
-        <!-- Sidebar  -->
+        <div class="wrapper">
+        
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>&#60;UBU&#62;</h3>
@@ -86,9 +80,44 @@
             <div class="line"></div>
         </div>
     </div>
+            <!--[   navbar end   ]-->
+            
+            
+        
+    <!-- Button trigger modal -->
+    <div class="btn1">
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        Rediger profil
+      </button>
+    </div>
 
-    
-   <!-- JS function for sidebar active  -->  
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JS function for sidebar active  -->  
     <script type="text/javascript">                        
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
@@ -96,18 +125,6 @@
             });
         }); 
     </script>
-            
-            <!--[   navbar end   ]-->
-            
-            
-          </div><!--col-->
-        </div>  
-      </div><!--container-->
-
-    <!-- Libraries -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
 
