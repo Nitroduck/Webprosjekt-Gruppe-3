@@ -60,7 +60,7 @@ a:focus {
     min-width: 105px;                             
     max-width: 105px;
     background: #006d9c;
-    color: #fff;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
+    color: white;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
     transition: all 0.3s;
     text-align: center;
 }
@@ -139,6 +139,22 @@ a.article:hover {
 }
 
 
+/* -----------------------------------
+    BOARD CONCEPT
+-------------------------------------*/
+
+#generate {
+	width: 140%;
+	margin-left: -1160%;
+	margin-top: 155%;
+	background-color: #006d9c;
+}
+
+#generate:hover {
+	background-color: white;
+	color: #006d9c
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -155,6 +171,7 @@ a.article:hover {
     background-color: #993c3c;
 }
 
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -170,3 +187,4 @@ a.article:hover {
         display: none;
     }
 }
+
