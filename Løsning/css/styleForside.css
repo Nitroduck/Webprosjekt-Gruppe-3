@@ -45,7 +45,7 @@ html,body{
     border: 1px solid #ffffff;
 }
 
-a:link, a:visited{
+a.login:link, a.login:visited{
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -54,7 +54,7 @@ a:link, a:visited{
     background-color: #006d9c;
 }
 
-a:hover, a:active{
+a.login:hover, a.login:active{
     background-color: #02577c;
 }
 
@@ -136,13 +136,24 @@ a:hover, a:active{
 #getStarted{
     position: absolute;
     top: 545px;
-    left: 663px;
+    left: 650px;
     height: 45px;
     color: #ffffff;
     background-color: #006d9c;
     border: 1px solid #006d9c;
     cursor: pointer;
 }
+
+a.gsBtn:link, a.gsBtn:visited{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    padding: 0px 7px; 
+    background-color: #006d9c;
+}
+
 
 
 

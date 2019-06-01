@@ -26,25 +26,25 @@
 
   </head>
     <body>
-            <div class="page-header">
+        <div class="page-header">
             <h1>Min profil</h1>
             <hr>
-            </div>
+        </div>
 
-            <div class="user-name">  
-            <p>Kari Nordmann</p> 
-            </div>
+        <div class="user-name">  
+            <p id="user-name">Kari Nordmann</p> 
+        </div>
         
             <i class="fas fa-user-circle"></i>
             
             <h2 class="contact">Contact</h2>
 
-            <div id="edit">
-            <p class="info-1">kari@nordmann.no</p>
-            </div>
+        
+            <p id="my-mail" class="info-1" >kari@nordmann.no</p>
+        
 
             <h2 class="dob">Date of birth</h2>
-            <p class="info-2">03/11-1995</p>
+            <p id= my-dob class="info-2">03/11-1995</p>
 
             <h2 class="level">Level</h2>
             <p class="info-3">Admin</p>
@@ -55,9 +55,10 @@
         <div class="wrapper">
         
         <nav id="sidebar">
-            <div class="sidebar-header">
+        <div class="sidebar-header">
                 <h3>&#60;UBU&#62;</h3>
-            </div> 
+        </div> 
+            
             <ul class="list-unstyled components">                                                 <!-- class list with the different sides  -->  
                 <li><a href="#"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                        
                 <li><a href="#"><i class="far fa-clipboard"></i><br>Board</a></li>
@@ -86,7 +87,7 @@
         
     <!-- Button trigger modal -->
     <div class="btn1">
-      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
         Rediger profil
       </button>
     </div>
@@ -96,17 +97,31 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Rediger profil</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body"> <!--Modal content-->
+                <div class="input-group flex-nowrap">
+                    <input id="fullName" type="text" value="" class="form-control" placeholder="Full name" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap">
+                    <input id="mail" type="text" value="" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap">
+                    <input id="dob" type="text" class="form-control" placeholder="Date of birth" aria-describedby="addon-wrapping">
+                </div>
+
+                
+                
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-primary" onclick="myFunction()" data-dismiss="modal">
+                Save changes</button>
             </div>
           </div>
         </div>
@@ -124,6 +139,18 @@
                 $('#sidebar').toggleClass('active');
             });
         }); 
+    </script>
+
+    <!--JS function for "Save Changes btn"-->
+    <script>
+    function myFunction() {
+    var fName = document.getElementById("fullName").value;
+    document.getElementById("user-name").innerHTML = fName;
+    var myMail = document.getElementById("mail").value;
+    document.getElementById("my-mail").innerHTML = myMail;
+    var myDob = document.getElementById("dob").value;
+    document.getElementById("my-dob").innerHTML = myDob;
+}
     </script>
   </body>
 </html>
