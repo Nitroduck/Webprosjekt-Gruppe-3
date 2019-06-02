@@ -13,6 +13,8 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/board.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	
+<script id="code">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -48,13 +50,6 @@
             <div class="line"></div>
         </div>
 		
-		<div id="board_concept">
-	
-	<button onclick="myFunction" type="button" id="generate" class="btn btn-primary">Primary</button>
-	
-	</div>
-    </div>
-	
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -69,13 +64,12 @@
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
-            });
+             });
         }); 
-			function myFunction() {
-  			var para = document.createElement("P");
-            para.innerHTML = "This is a paragraph.";
-            document.getElementById("myDIV").appendChild(para);
-}
+		
+  
+		
     </script>
+
 </body>
 </html>
