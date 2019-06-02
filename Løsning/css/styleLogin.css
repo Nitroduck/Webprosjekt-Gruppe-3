@@ -11,6 +11,7 @@ html,body{
     top: 150px;
     left: 400px;
     text-align: center;
+    margin: auto;
 }
 
 #emailInp{
@@ -50,12 +51,12 @@ a.login:hover, a.login:active{
 #finalLogin{
     position: absolute;
     top: 300px;
-    left: 130px;
+    left: 120px;
     height: 25px;
     width: 200px;
     border-radius: 25px;
-    background-color: #87ddaa;
-    border: 1px solid #87ddaa;
+    background-color: #f89a34;
+    border: 1px solid #f89a34;
     cursor: pointer;
     font-size: 20px;
 }

@@ -90,7 +90,7 @@ a.login:hover, a.login:active{
 }
 
 .text{
-    font-size: 6vw;
+    font-size: 80px;
 }
 
 #study{
@@ -127,7 +127,6 @@ a.login:hover, a.login:active{
     left: 50px;
     width: 55%;
     color: rgb(133, 133, 133);
-    font-size: 1.2vw;
 }
 
 #email{
