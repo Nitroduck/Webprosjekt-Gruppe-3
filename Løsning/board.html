@@ -13,8 +13,11 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/board.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+ 
 	
-<script id="code">
+
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -37,7 +40,6 @@
                 <li><a href="#"><i class="far fa-envelope-open"></i><br>Report</a></li>
             </ul>
         </nav>
-        
 
         <!-- Page Content  -->
         <div id="content">
@@ -48,11 +50,27 @@
             
             <h2 class="pt-4">Prosjekt navn</h2>
             <div class="line"></div>
-        </div>
-		
+            <div id="board">
+                <div><button id="addItem">Add box</button></div>
+                <h4 id="boardTodo">To do</h4>
+                <h4 id="boardInprogress">In progress</h4>
+                <h4 id="boardDone">Done</h4>
+                <div id="todo" class="boardProgress"></div>
+                <div id="inprogress" class="boardProgress"></div>
+                <div id="done" class="boardProgress"></div>
+            </div>
+            <div id="items">
+                <div id="dragItem1" contenteditable="true" class="dragItems"></div>
+                <div id="dragItem2" class="dragItems"></div>
+                <div id="dragItem3" class="dragItems"></div>
+            </div>  
+            
+
+	   </div>	
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -60,16 +78,37 @@
 
    <!-- JS function for sidebar active  -->  
     
-	<script type="text/javascript">                        
+	<script type="text/javascript">  
+        
+        //Menu hide function
+        
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
              });
         }); 
-		
-  
-		
+    
+        //Drag and drop function
+        
+        $('#addItem').click(function() {
+            var $box = $('<div id="dragItemNew" class="dragItems">New</div>');
+            $('#items').append($box);
+            $( ".dragItems" ).draggable();
+        });
+        $( ".dragItems" ).draggable();
+        
+        $( ".boardProgress" ).droppable({
+            accept: ".dragItems",
+            drop: function( event, ui ) {
+               var droppable = $(this);
+               var draggable = ui.draggable;
+               // Move draggable into droppable
+               draggable.appendTo(droppable);
+                draggable.css({top: '0%', left: '0%', margin: '0%'});
+            }
+        });
+
     </script>
 
-</body>
+ </body>
 </html>
