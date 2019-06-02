@@ -41,6 +41,12 @@ a.login:hover, a.login:active{
     background-color: #b8f7d1;
 }
 
+#status{
+    position: absolute;
+    top: 250px;
+    left: 85px;
+}
+
 #finalLogin{
     position: absolute;
     top: 300px;

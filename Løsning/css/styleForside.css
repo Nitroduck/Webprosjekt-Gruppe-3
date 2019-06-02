@@ -13,6 +13,10 @@ html,body{
     left: 30px;
 }
 
+.btn{
+    width: 100%;
+}
+
 #homeBtn{
     position: absolute;
     top: 15px;
@@ -74,16 +78,19 @@ a.login:hover, a.login:active{
     top: 80px;
     z-index: 1;
     opacity: 0.15;
+    width: 650px;
+    position: sticky;
 }
 
 #illustration{
     left: 720px;
-    height: 450px;
+    width: 40%;
     top: 130px;
+    z-index: 2;
 }
 
 .text{
-    font-size: 80px;
+    font-size: 6vw;
 }
 
 #study{
@@ -118,8 +125,9 @@ a.login:hover, a.login:active{
     position: absolute;
     top: 450px;
     left: 50px;
-    width: 800px;
+    width: 55%;
     color: rgb(133, 133, 133);
+    font-size: 1.2vw;
 }
 
 #email{
