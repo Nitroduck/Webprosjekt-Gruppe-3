@@ -275,4 +275,8 @@ h2.level{
     border: 0px dotted red;
 }
 
+#edit-button{
+    background-color: darkred;
+}
+
 
