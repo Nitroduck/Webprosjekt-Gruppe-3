@@ -1,4 +1,4 @@
-/*let emailInput = document.getElementById("emailInp");
+let emailInput = document.getElementById("emailInp");
 let passwordInput = document.getElementById("passwordInput");
 let finalLogin = document.getElementById("finalLogin");
 let status = document.getElementById("staus");
@@ -9,4 +9,4 @@ function login() {
     } else {
         status.innerText = "Wrong email or password";
     }
-}*/
+}

@@ -7,16 +7,14 @@ html,body{
     position: absolute;
 }
 
+/*logo pic in the top bar*/
 #logo{
     height: 40px;
     top: 10px;
     left: 30px;
 }
 
-.btn{
-    width: 100%;
-}
-
+/*buttons in top bar.*/
 #homeBtn{
     position: absolute;
     top: 15px;
@@ -72,7 +70,9 @@ a.login:hover, a.login:active{
     color: #ffffff;
     cursor: pointer;
 }
+/*end of buttons in top bar*/
 
+/*Background pic with the check symbol*/
 #pic{
     left: 100px;
     top: 80px;
@@ -82,6 +82,7 @@ a.login:hover, a.login:active{
     position: sticky;
 }
 
+/*illustration of the girl*/
 #illustration{
     left: 720px;
     width: 40%;
@@ -89,6 +90,7 @@ a.login:hover, a.login:active{
     z-index: 2;
 }
 
+/*Text*/
 .text{
     font-size: 80px;
 }
@@ -128,7 +130,9 @@ a.login:hover, a.login:active{
     width: 55%;
     color: rgb(133, 133, 133);
 }
+/*end of text*/
 
+/*email input*/
 #email{
     top: 540px;
     left: 70px;
@@ -139,7 +143,9 @@ a.login:hover, a.login:active{
     width: 700px;
     border: 2px solid #006d9c
 }
+/*end of email input*/
 
+/*get started button*/
 #getStarted{
     position: absolute;
     top: 545px;
@@ -160,6 +166,7 @@ a.gsBtn:link, a.gsBtn:visited{
     padding: 0px 7px; 
     background-color: #006d9c;
 }
+/*end of get started button*/
 
 
 
