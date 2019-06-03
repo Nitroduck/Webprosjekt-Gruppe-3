@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/prosjekter.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -32,11 +32,11 @@
                 <h3>&#60;UBU&#62;</h3>
             </div> 
             <ul class="list-unstyled components">                                                 <!-- class list with the different sides  -->  
-                <li><a href="prosjekter.html"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                        
-                <li class="active"><a href="#"><i class="far fa-clipboard"></i><br>Board</a></li>
+                <li class="active"><a href="prosjekter.html"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                   
+                <li><a href="board.html"><i class="far fa-clipboard"></i><br>Board</a></li>
                 <li><a href="profil.html"><i class="far fa-user"></i><br>Bruker</a></li>
-                <li><a href="#"><i class="fas fa-users"></i><br>Grupper</a></li>
-                <li><a href="#"><i class="far fa-envelope-open"></i><br>Report</a></li>
+                <li><a href="group.html"><i class="fas fa-users"></i><br>Grupper</a></li>
+                <li><a href="report.html"><i class="far fa-envelope-open"></i><br>Report</a></li>
             </ul>
         </nav>
 
@@ -47,50 +47,10 @@
             <i class="fas fa-align-left"></i>
         </button>
             
-            <h2 class="pt-4" contenteditable="true">Prosjekt navn</h2>
+            <h2 class="pt-4" contenteditable="true">Prosjekter</h2>
             <div class="line"></div>
             <div id="board">
-                <div><button id="addItem">Add box</button></div>
-                <h4 id="boardTodo" contenteditable="true">To do</h4>
-                <h4 id="boardInprogress" contenteditable="true">In progress</h4>
-                <h4 id="boardDone" contenteditable="true">Done</h4>
-                <div id="todo" class="boardProgress"></div>
-                <div id="inprogress" class="boardProgress"></div>
-                <div id="done" class="boardProgress"></div>
-            </div>
-            <div id="items">  
-            </div>  
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  				<div class="modal-dialog" role="document">
-				<div class="modal-content">
-				  <div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Update item</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					  <span aria-hidden="true">&times;</span>
-						</button>
-						  </div>
-						  <div class="modal-body">
-							<form>
-							  <div class="form-group">
-								<label for="recipient-name" class="col-form-label">Title:</label>
-								<input type="text" class="form-control" id="recipient-name">
-							  </div>
-							  <div class="form-group">
-								<label for="message-text" class="col-form-label">Description:</label>
-								<textarea class="form-control" id="message-text"></textarea>
-							  </div>
-								<div class="form-group">
-								<label for="recipient-name" class="col-form-label">Unassigned:</label>
-								<input type="text" class="form-control" id="recipient-name">
-							</form>
-						  </div>
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Update</button>
-						  </div>
-						</div>
-					  </div>
-					</div>
+				<a class="btn btn-primary" id="linkButton" href="board.html" role="button" i class="far fa-clipboard"></a>
 
 	   </div>	
 
@@ -113,26 +73,7 @@
                 $('#sidebar').toggleClass('active');
              });
         }); 
-    
-        //Drag and drop function
-        
-        $('#addItem').click(function() {
-            var $box = $('<div id="dragItemNew" class="dragItems" data-toggle="modal" data-target="#exampleModal"></div>');
-            $('#items').append($box);
-            $( ".dragItems" ).draggable();
-        });
-        $( ".dragItems" ).draggable();
-        
-        $( ".boardProgress" ).droppable({
-            accept: ".dragItems",
-            drop: function( event, ui ) {
-               var droppable = $(this);
-               var draggable = ui.draggable;
-               // Move draggable into droppable
-               draggable.appendTo(droppable);
-                draggable.css({top: '0%', left: '0%', margin: '0%'});
-            }
-        });
+   
 		
     </script>
 
