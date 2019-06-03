@@ -4,50 +4,23 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/group.css">
     <link rel="stylesheet" type="text/css" href="js/group.js">
-
-    
-    
-    
 </head>
     
+
 <body>
-        <div class="wrapper">
-                <!-- Sidebar  -->
-                <nav id="sidebar">
-                    <div class="sidebar-header">
-                        <h3>&#60;UBU&#62;</h3>
-                    </div> 
-                    <ul class="list-unstyled components"> <!-- class list with the different sides  -->  
-                        <li><a href="#"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                        
-                        <li class="active"><a href="board.html"><i class="far fa-clipboard"></i><br>Board</a></li>
-                        <li><a href="calendar.html"><i class="far fa-calendar-alt"></i><br>Kalender</a></li>
-                        <li><a href="profil.html"><i class="far fa-user"></i><br>Bruker</a></li>
-                        <li><a href="group.html"><i class="fas fa-users"></i><br>Grupper</a></li>
-                        <li><a href="#"><i class="far fa-envelope-open"></i><br>Report</a></li>
-                    </ul>
-                </nav>
-<!-- Page Content  -->
-<div id="content">
-        
-        <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>
-        </button>
-
-        <div class="line"></div>
-        </div>
-        
-
     <div id="myDIV" class="header">
         <h2>Groups</h2>
         <input type="text" id="myInput" placeholder="Search...">
         <span onclick="newElement()" class="addBtn">Add</span>
       
-        <!--scroll- feature -->
+        
          <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
       </div>
     
+
+
       <ul id="myUL">
         <li>Team Skogvold</li>
         <li class="checked">Gruppe 3</li>
@@ -60,18 +33,10 @@
       </ul>
 
         <!-- NAVBAR -->
-        <!-- JS function for sidebar active  -->  
-    <script type="text/javascript">                        
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        }); 
-    </script>
 
         <script type="text/javascript">  
 
-//  close button, append to list items
+// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
