@@ -1,0 +1,285 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+#mainContainer img, #mainContainer div, #mainContainer h1{
+    position: absolute;
+}
+
+/*logo pic in the top bar*/
+#logo{
+    height: 40px;
+    top: 20px;
+    left: 30px;
+}
+
+/*buttons in top bar.*/
+#homeBtn{
+    position: absolute;
+    top: 23px;
+    left: 810px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+#contactBtn{
+    position: absolute;
+    top: 23px;
+    left: 910px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+#aboutBtn{
+    position: absolute;
+    top: 23px;
+    left: 1020px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+#faqBtn{
+    position: absolute;
+    top: 23px;
+    left: 1110px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+#loginBtn{
+    position: absolute;
+    top: 2px;
+    right: 80px;
+    width: 70px;
+    border: 1px solid #006d9c;
+    background-color: #006d9c;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*end of buttons in top bar*/
+
+/*Background pic with the check symbol*/
+#pic{
+    left: 100px;
+    top: 80px;
+    z-index: 1;
+    opacity: 0.15;
+    width: 650px;
+    position: sticky;
+}
+
+/*illustration of the girl*/
+#illustration{
+    left: 720px;
+    width: 40%;
+    top: 130px;
+}
+
+/*Text*/
+.text{
+    font-size: 80px;
+}
+
+#study{
+    top: 200px;
+    left: 100px;
+    font-family: 'Open sans', sans-serif;
+    color: rgb(170, 170, 170);
+}
+
+#smarter{
+    top: 200px;
+    left: 340px;
+    font-family: 'Open sans', sans-serif;
+    color: #022f42
+}
+
+#get{
+    top: 300px;
+    left: 80px;
+    font-family: 'Open sans', sans-serif;
+    color: rgb(170, 170, 170);
+}
+
+#done{
+    top: 300px;
+    left: 480px;
+    font-family: 'Open sans', sans-serif;
+    color: #022f42;
+}
+
+#dummyText{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    width: 55%;
+    color: rgb(133, 133, 133);
+}
+/*end of text*/
+
+/*email input*/
+#email{
+    top: 540px;
+    left: 70px;
+}
+
+#emailInput{
+    height: 50px;
+    width: 700px;
+    border: 2px solid #006d9c
+}
+/*end of email input*/
+
+/*get started button*/
+#getStarted{
+    position: absolute;
+    top: 545px;
+    left: 643px;
+    height: 45px;
+    color: #ffffff;
+    background-color: #006d9c;
+    border: 1px solid #006d9c;
+    cursor: pointer;
+}
+
+a.gsBtn:link, a.gsBtn:visited{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    padding: 0px 7px; 
+    background-color: #006d9c;
+}
+/*end of get started button*/
+
+/************************************THE LOGIN FORM:**********************************/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+#cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
