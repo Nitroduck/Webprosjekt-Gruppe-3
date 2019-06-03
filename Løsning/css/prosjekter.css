@@ -154,7 +154,18 @@ a.article:hover {
 
 #linkButton:hover {
 	margin-top: 5px;
-	transition-duration: 0.2s;
+}
+
+
+#prosjekt_navn {
+	margin-left: 2%;
+}
+
+.fa-ellipsis-h {
+	margin-left: 120px;
+	margin-top: 28px;
+	color: white;
+	position: absolute;
 }
 
 
