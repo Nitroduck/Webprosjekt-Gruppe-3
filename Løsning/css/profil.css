@@ -1,4 +1,4 @@
-/* navbar */
+/* navbar start */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;            /*Body standard like font and background color*/
@@ -268,6 +268,11 @@ h2.level{
     position: absolute;
     top: 120px;
     left: 1300px;
+    
+}
+
+#modul-hr{
+    border: 0px dotted red;
 }
 
 
