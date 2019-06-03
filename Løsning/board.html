@@ -54,13 +54,11 @@
                 <h4 id="boardTodo" contenteditable="true">To do</h4>
                 <h4 id="boardInprogress" contenteditable="true">In progress</h4>
                 <h4 id="boardDone" contenteditable="true">Done</h4>
-                <div id="todo" class="boardProgress">
-                  
-                </div>
+                <div id="todo" class="boardProgress"></div>
                 <div id="inprogress" class="boardProgress"></div>
                 <div id="done" class="boardProgress"></div>
             </div>
-            <div id="items">  
+            <div id="items">
             </div>  
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
@@ -133,7 +131,7 @@
                var draggable = ui.draggable;
                // Move draggable into droppable
                draggable.appendTo(droppable);
-                draggable.css({top: '0%', left: '0%', margin: '0%'});
+                draggable.css({top: '0%', left: '35px', marginTop: '10px'});
             }
         });
 		

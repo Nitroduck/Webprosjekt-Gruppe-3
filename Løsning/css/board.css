@@ -202,29 +202,22 @@ a.article:hover {
     float: left;
     width: 200px;
     min-height: 80vh;
-    padding: 0 0 0 0;
-    margin: 40px 0 0 12%;
+    padding: 0 18% 0 0;
+    margin: 2% 0 0 12%;
     text-align: center;
     font-size: 35px;
-    color: black;
-    border-radius: 10px;
-}
-
-.boardProgress:hover{
-	border-style: solid;
-	border-width: 0.6px;
-	transition: 0.3s;
-	color: darkgray;
+    background-color: #F6F6F6;
+    border-top: 5px solid #993c3c;
 }
 
 #dragItemNew{
-    height: 50px;
-    width: 200px;
+    height: 100px;
+    width: 250px;
     background-color: #006d9c;
     color: aliceblue;
 	font-family: 'Poppins', sans-serif;
 	transition: transform .2s;
-	margin: 4% 12%;
+	margin: 5% 12% 35% 14% ;
 	position: relative;
 	cursor: pointer;
 	
@@ -268,16 +261,19 @@ h4 {
 #boardTodo {
     margin: 0px 0px 0px 11%;
 	cursor: text;
+    font-family: sans-serif;
 }
 
 #boardInprogress {
-    margin: 0px 0px 0px 37%;
+    margin: 0px 0px 0px 39%;
 	cursor: text;
+    font-family: sans-serif;
 }
 
 #boardDone {
-    margin: 0px 0px 0px 64%;
+    margin: 0px 0px 0px 67%;
 	cursor: text;
+    font-family: sans-serif;
 }
 .clear {clear: both;}
 
@@ -292,6 +288,7 @@ h4 {
 	margin-top: 10px;
     border:0;
     cursor: pointer;
+    
 
 }
 
