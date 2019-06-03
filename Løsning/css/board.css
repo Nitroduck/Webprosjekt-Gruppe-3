@@ -5,7 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;            /*Body standard like font and background color*/
-    background: #fafafa;
+    background: #f8fafa;
 }
 
 p {
@@ -46,6 +46,10 @@ a:focus {
     margin: 0px 0;
 }
 
+h2 {
+	color: #006d9c;
+	cursor: text;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -199,42 +203,61 @@ a.article:hover {
     width: 200px;
     min-height: 80vh;
     padding: 0 0 0 0;
-    background-color:#f2f2f2;
-    margin: 40px 0 0 250px;
+    background-color:;
+    margin: 40px 0 0 12%;
     text-align: center;
     font-size: 35px;
     color: black;
     border-radius: 10px;
 }
 
+.boardProgress:hover{
+	border-style: solid;
+	border-width: 0.6px;
+	transition: 0.3s;
+	color: darkgray;
+}
+
 #dragItemNew{
-    height: 70px;
+    height: 50px;
     width: 200px;
-    background-color: black;
+    background-color: #006d9c;
     color: aliceblue;
+	font-family: 'Poppins', sans-serif;
+	transition: transform .2s;
+	margin: 4% 12%;
+	position: relative;
+	cursor: pointer;
+	
 }
 
 .dragItems {
-    font-size: 20px;
+    font-size: 17px;
     text-align: start;
-    
-    
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0.1px 0.1px 0.1px 0.1px grey;
+	
 }
 
 #dragItem1{
-    height: 70px;
+    height: 50px;
     width: 200px;
-    background-color: red;
+    background-color: #006d9c ;
 }
 #dragItem2{
-    height: 70px;
+    height: 50px;
     width: 200px;
-    background-color: blue;
+    background-color: #006d9c;
 }
 #dragItem3{
-    height: 70px;
+    height: 50px;
     width: 200px;
-    background-color: green;
+    background-color: #006d9c;
+}
+
+#dragItemNew:hover {
+	transform: scale(1.1)
 }
 
 h4 {
@@ -244,15 +267,18 @@ h4 {
 }
 
 #boardTodo {
-    margin: 5px 0px 0px 260px;
+    margin: 0px 0px 0px 11%;
+	cursor: text;
 }
 
 #boardInprogress {
-    margin: 5px 0px 0px 710px;
+    margin: 0px 0px 0px 37%;
+	cursor: text;
 }
 
 #boardDone {
-    margin: 5px 0px 0px 1165px;
+    margin: 0px 0px 0px 64%;
+	cursor: text;
 }
 .clear {clear: both;}
 
@@ -264,6 +290,7 @@ h4 {
     font-size: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
+	margin-top: 10px;
     border:0;
     cursor: pointer;
 
