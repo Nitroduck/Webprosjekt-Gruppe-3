@@ -15,10 +15,10 @@
         <!--top bar: ('login' is the only clickable button.)-->
         <div id="topBar">
           <img id="logo" src="images/toDO-logoGradient.png">
-          <button class="btn" type="home" id="homeBtn">Home</button>
-          <button class="btn" type="contact" id="contactBtn">Contact</button>
-          <button class="btn" type="About" id="aboutBtn">About</button>
-          <button class="btn" type="faq" id="faqBtn">FAQ</button>
+          <button type="home" id="homeBtn">Home</button>
+          <button type="contact" id="contactBtn">Contact</button>
+          <button type="About" id="aboutBtn">About</button>
+          <button type="faq" id="faqBtn">FAQ</button>
           
         </div>
         
@@ -40,11 +40,11 @@
             <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Email">
         </div>
         <!--'Get started' button. It can be clicked, but doesn't lead anywhere-->
-        <a class="gsBtn" href="SETT INN NOE HER" id="getStarted">GET STARTED</a>
+        <a class="gsBtn" href="./google.com" id="getStarted">GET STARTED</a>
 
         </div>
 
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="loginBtn">Login</button>
+        <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="loginBtn">Login</button>
 
 <div id="id01" class="modal">
   
@@ -61,14 +61,14 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button class="btn" type="submit">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button class="btn" type="button" onclick="document.getElementById('id01').style.display='none'" id="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
