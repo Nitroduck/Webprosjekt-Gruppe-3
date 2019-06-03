@@ -34,6 +34,7 @@
             <ul class="list-unstyled components">                                                 <!-- class list with the different sides  -->  
                 <li><a href="#"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                        
                 <li class="active"><a href="#"><i class="far fa-clipboard"></i><br>Board</a></li>
+                <li><a href="calendar.html"><i class="far fa-calendar-alt"></i><br>Kalender</a></li>
                 <li><a href="profil.html"><i class="far fa-user"></i><br>Bruker</a></li>
                 <li><a href="#"><i class="fas fa-users"></i><br>Grupper</a></li>
                 <li><a href="#"><i class="far fa-envelope-open"></i><br>Report</a></li>
@@ -47,47 +48,23 @@
             <i class="fas fa-align-left"></i>
         </button>
             
-            <h2 class="pt-4" contenteditable="true">Prosjekt navn</h2>
+            <h2 class="pt-4">Prosjekt navn</h2>
             <div class="line"></div>
             <div id="board">
                 <div><button id="addItem">Add box</button></div>
-                <h4 id="boardTodo" contenteditable="true">To do</h4>
-                <h4 id="boardInprogress" contenteditable="true">In progress</h4>
-                <h4 id="boardDone" contenteditable="true">Done</h4>
+                <h4 id="boardTodo">To do</h4>
+                <h4 id="boardInprogress">In progress</h4>
+                <h4 id="boardDone">Done</h4>
                 <div id="todo" class="boardProgress"></div>
                 <div id="inprogress" class="boardProgress"></div>
                 <div id="done" class="boardProgress"></div>
             </div>
-            <div id="items">  
+            <div id="items">
+                <div id="dragItem1" contenteditable="true" class="dragItems"></div>
+                <div id="dragItem2" class="dragItems"></div>
+                <div id="dragItem3" class="dragItems"></div>
             </div>  
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  				<div class="modal-dialog" role="document">
-				<div class="modal-content">
-				  <div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Update item</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					  <span aria-hidden="true">&times;</span>
-						</button>
-						  </div>
-						  <div class="modal-body">
-							<form>
-							  <div class="form-group">
-								<label for="recipient-name" class="col-form-label">Title:</label>
-								<input type="text" class="form-control" id="recipient-name">
-							  </div>
-							  <div class="form-group">
-								<label for="message-text" class="col-form-label">Description:</label>
-								<textarea class="form-control" id="message-text"></textarea>
-							  </div>
-							</form>
-						  </div>
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Update</button>
-						  </div>
-						</div>
-					  </div>
-					</div>
+            
 
 	   </div>	
 
@@ -114,7 +91,7 @@
         //Drag and drop function
         
         $('#addItem').click(function() {
-            var $box = $('<div id="dragItemNew" class="dragItems" data-toggle="modal" data-target="#exampleModal"></div>');
+            var $box = $('<div id="dragItemNew" class="dragItems">New</div>');
             $('#items').append($box);
             $( ".dragItems" ).draggable();
         });
@@ -130,7 +107,7 @@
                 draggable.css({top: '0%', left: '0%', margin: '0%'});
             }
         });
-		
+
     </script>
 
  </body>
