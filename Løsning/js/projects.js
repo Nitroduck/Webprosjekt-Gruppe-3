@@ -1,3 +1,6 @@
+document.getElementById("user-name").innerHTML = users[0].name;
+
+
 let projects = [
     {
         id: 1,
