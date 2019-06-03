@@ -1,8 +1,11 @@
-/* navbar */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;            /*Body standard like font and background color*/
-    background: #fafafa;
+    background: #f8fafa;
 }
 
 p {
@@ -10,7 +13,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color:black; 
+    color: #999;
 }
 
 a,
@@ -36,6 +39,17 @@ a:focus {
     border: none;
 }
 
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 0px 0;
+}
+
+h2 {
+	color: #006d9c;
+	cursor: text;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -50,7 +64,7 @@ a:focus {
     min-width: 105px;                             
     max-width: 105px;
     background: #006d9c;
-    color: #fff;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
+    color: white;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
     transition: all 0.3s;
     text-align: center;
 }
@@ -90,6 +104,7 @@ a:focus {
     background: #fff;
 }
 
+
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -124,7 +139,50 @@ a.article:hover {
 }
 
 .fa-users {
-    font-size: 180%;             /* icon (gruppe) size edit */
+    font-size: 180%;             /* icon size edit */
+}
+
+#linkButton {
+	width: 5%;
+	height: 100%;
+	padding: 7%;
+	margin-top: 15px;
+	border-radius: 35px;
+	color: black;
+	background-color: mediumslateblue;
+}
+
+#linkButton:hover {
+	margin-top: 5px;
+}
+
+
+#prosjekt_navn {
+	margin-left: 2%;
+}
+
+.fa-ellipsis-h {
+	margin-left: 120px;
+	margin-top: 28px;
+	color: white;
+	position: absolute;
+}
+
+
+/* -----------------------------------
+    BOARD CONCEPT
+-------------------------------------*/
+
+#generate {
+	width: 130%;
+	margin-left: -1780%;
+	margin-top: 245%;
+	background-color: #006d9c;
+}
+
+#generate:hover {
+	background-color: white;
+	color: #006d9c
 }
 
 
@@ -134,16 +192,16 @@ a.article:hover {
 
 #content {                                                   
     width: 100%;                      /*Content function, decides position*/
-    padding: 2%;
+    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-    color: #006d9c;
 }
 
 #sidebarCollapse {                                     /*Content function, decides color*/
     color: white;
     background-color: #993c3c;
 }
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -160,114 +218,3 @@ a.article:hover {
         display: none;
     }
 }
-/*navbar end */
-
-
-
-.line {
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px solid #ddd;
-    margin: 0px 0;
-}
-
-.page-header{
-    position: absolute;
-    top: 3%;
-    left: 200px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(64, 102, 172); 
-}
-
-hr{
-    position: relative;
-    margin-left: -50px;
-    margin-right: 350px;
-    border-color: dimgray;
-    border-width: 1px;
-}
-
-
-.fa-user-circle{
-    position: absolute;
-    left: 280px;
-    top: 150px;
-    font-size: 250px;
-    color: darkgrey;
-}
-
-.user-name{
-    position: absolute;
-    top: 420px;
-    left: 275px;;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    color: rgb(50, 50, 50);
-
-}
-
-h2.contact{
-    position: absolute;
-    top: 200px;
-    left: 700px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: lightgray;
-}
-
-.info-1{
-    position: absolute;
-    display: block;
-    top: 230px;
-    left: 700px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    border-bottom: 1px solid dimgray;
-    
-}
-
-h2.dob{
-    position: absolute;
-    top: 300px;
-    left: 700px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: darkgray;
-}
-
-.info-2{
-    position: absolute;
-    top: 330px;
-    left: 700px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    border-bottom: 1px solid dimgray;
-}
-
-h2.level{
-    position: absolute;
-    top: 400px;
-    left: 700px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: darkgray;
-}
-
-.info-3{
-    position: absolute;
-    top: 430px;
-    left: 700px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    border-bottom: 1px solid dimgray;
-}
-
-.btn1{
-    position: absolute;
-    top: 120px;
-    left: 1300px;
-}
-
-
