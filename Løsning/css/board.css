@@ -144,9 +144,9 @@ a.article:hover {
 -------------------------------------*/
 
 #generate {
-	width: 140%;
-	margin-left: -1160%;
-	margin-top: 155%;
+	width: 130%;
+	margin-left: -1780%;
+	margin-top: 245%;
 	background-color: #006d9c;
 }
 
@@ -154,6 +154,7 @@ a.article:hover {
 	background-color: white;
 	color: #006d9c
 }
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -186,5 +187,91 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+#board {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.boardProgress {
+    float: left;
+    width: 200px;
+    min-height: 80vh;
+    padding: 0 0 0 0;
+    background-color:#f2f2f2;
+    margin: 40px 0 0 250px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    border-radius: 10px;
+}
+
+#dragItemNew{
+    height: 70px;
+    width: 200px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.dragItems {
+    font-size: 20px;
+    text-align: start;
+    
+    
+}
+
+#dragItem1{
+    height: 70px;
+    width: 200px;
+    background-color: red;
+}
+#dragItem2{
+    height: 70px;
+    width: 200px;
+    background-color: blue;
+}
+#dragItem3{
+    height: 70px;
+    width: 200px;
+    background-color: green;
+}
+
+h4 {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+#boardTodo {
+    margin: 5px 0px 0px 260px;
+}
+
+#boardInprogress {
+    margin: 5px 0px 0px 710px;
+}
+
+#boardDone {
+    margin: 5px 0px 0px 1165px;
+}
+.clear {clear: both;}
+
+#addItem {
+    color: white;
+    background-color: #993c3c;
+    width: 8%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border:0;
+    cursor: pointer;
+
+}
+
+#addItem:hover {
+    color: white;
+    background-color: darkred;
+    transition: 0.3s;
 }
 
