@@ -1,0 +1,287 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #006d9c;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #006d9c;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  /* NAVBAR CSS */
+
+
+@import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;            /*Body standard like font and background color*/
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;           /*paragraph standard*/
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;               /*a standard for sidebar*/
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 0px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 105px;                             
+    max-width: 105px;
+    background: #006d9c;
+    color: #fff;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
+    transition: all 0.3s;
+    text-align: center;
+}
+
+#sidebar.active {
+    margin-left: -105px;      /*Part of the sidebar responsive framework*/
+}
+
+#sidebar .sidebar-header {    /*Sidebar header, decided header location and color background*/
+    padding: 20px 0px;
+    background: #006d9c;
+}
+
+#sidebar ul.components {
+    padding: 0% 0% 0% 0%;             /* Edit sidebar position */
+    border-bottom: 1px solid #006d9c;
+}
+
+#sidebar ul p {                        
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {           /*Sidebar ul li a, decides the bars font size, display and space between each other */
+    padding: 18px;
+    font-size: 0.9em;
+    display: block;
+}
+
+#sidebar ul li a:hover {      /*sidebar hover, decides the color when hover*/
+    color: #006d9c;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {                         /*Sidebar active button, changes the color of the active sidebar*/
+    color: #006d9c;
+    background: #fff;
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+.far {
+    font-size: 180%;             /* icon size edit */
+}
+
+.fa-users {
+    font-size: 180%;             /* icon (gruppe) size edit */
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {                                                   
+    width: 100%;                      /*Content function, decides position*/
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    color: #006d9c;
+}
+
+#sidebarCollapse {                                     /*Content function, decides color*/
+    color: white;
+    background-color: #993c3c;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {                            /*Content function, decides color*/
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
