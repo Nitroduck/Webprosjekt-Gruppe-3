@@ -145,11 +145,26 @@ a.article:hover {
 #linkButton {
 	width: 5%;
 	height: 100%;
-	padding: 7%;
+	padding: 5%;
 	margin-top: 15px;
 	border-radius: 35px;
 	color: black;
 	background-color: mediumslateblue;
+	border: none;
+}
+
+#link2Button {
+	width: 5%;
+	height: 10%;
+	padding: 5%;
+	margin-top: 15px;
+	margin-left: 55px;
+	border-radius: 35px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-style: dashed;
+	border-width: 1.5px;
 }
 
 #linkButton:hover {
@@ -159,8 +174,21 @@ a.article:hover {
 	animation-duration: 2s;
 }
 
+#link2Button:hover {
+	margin-top: 5px;
+	transition-duration: 0.2s;
+	animation-name: vis;
+	animation-duration: 2s;
+}
+
 #prosjekt_navn {
-	margin-left: 2%;
+	margin-left: 0%;
+	position: absolute;
+}
+
+#prosjekt_ny {
+	margin-left: 14.5%;
+	position: absolute;
 }
 
 .fa-ellipsis-h {
