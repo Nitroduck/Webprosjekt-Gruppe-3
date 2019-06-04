@@ -168,32 +168,18 @@ a.article:hover {
 /*navbar end */
 
 
-
 .line {
-    position: absolute;
-    top: 80px;
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px dashed #ddd;
     margin: 0px 0;
 }
 
-.page-header{
-    position: absolute;
-    top: 3%;
-    left: 200px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(64, 102, 172); 
+h2 {
+    
+	color: #006d9c;
+	cursor: text;
 }
-
-hr{
-    position: relative;
-    margin-left: -50px;
-    margin-right: 350px;
-    border-color: dimgray;
-    border-width: 1px;
-}
-
 
 .fa-user-circle{
     position: absolute;
