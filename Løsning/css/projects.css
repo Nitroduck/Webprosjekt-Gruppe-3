@@ -60,6 +60,11 @@ h2 {
     align-items: stretch;
 }
 
+#toDo-logo{
+	width: 80%;
+	padding: 0%;
+}
+
 #sidebar {
     min-width: 105px;                             
     max-width: 105px;
@@ -142,6 +147,18 @@ a.article:hover {
     font-size: 180%;             /* icon size edit */
 }
 
+.fa-plus {
+	font-size: 150%;
+	color: darkgray;
+}
+
+.fa-plus:hover {
+	color: black;
+	transform: scale(1.5);
+	transition: 0.5s;
+		
+}
+
 #linkButton {
 	width: 5%;
 	height: 100%;
@@ -154,9 +171,9 @@ a.article:hover {
 }
 
 #link2Button {
-	width: 5%;
-	height: 10%;
-	padding: 5%;
+	width: 10%;
+	height: 8%;
+	padding: 4%;
 	margin-top: 15px;
 	margin-left: 55px;
 	border-radius: 35px;
@@ -170,14 +187,6 @@ a.article:hover {
 #linkButton:hover {
 	margin-top: 5px;
 	transition-duration: 0.2s;
-	animation-name: vis;
-	animation-duration: 2s;
-}
-
-#link2Button:hover {
-	margin-top: 5px;
-	transition-duration: 0.2s;
-	animation-name: vis;
 	animation-duration: 2s;
 }
 
