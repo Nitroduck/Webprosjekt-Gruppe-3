@@ -28,7 +28,35 @@
 </head>
 
 <body>
-    <div class="page-header">
+
+    <!--[  navbar   ]-->
+    <div class="wrapper">
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text" 
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- class list with the different sides  -->
+                <li><a href="projects.html"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>
+                <li><a href="board.html"><i class="far fa-clipboard"></i><br>Board</a></li>
+                <li class="active"><a href="#"><i class="far fa-user"></i><br>Bruker</a></li>
+                <li><a href="group.html"><i class="fas fa-users"></i><br>Grupper</a></li>
+                <li><a href="report.html"><i class="far fa-envelope-open"></i><br>Report</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+            </button>
+			
+			   <div class="page-header">
         <h1>Min profil</h1>
         <hr>
     </div>
@@ -50,51 +78,13 @@
 
     <h2 class="level">Level</h2>
     <p class="info-3">Admin</p>
-
-
-
-    <!--[  navbar   ]-->
-    <div class="wrapper">
-
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>&#60;UBU&#62;</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <!-- class list with the different sides  -->
-                <li><a href="projects.html"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>
-                <li><a href="board.html"><i class="far fa-clipboard"></i><br>Board</a></li>
-                <li class="active"><a href="#"><i class="far fa-user"></i><br>Bruker</a></li>
-                <li><a href="group.html"><i class="fas fa-users"></i><br>Grupper</a></li>
-                <li><a href="report.html"><i class="far fa-envelope-open"></i><br>Report</a></li>
-            </ul>
-        </nav>
-
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-align-left"></i>
-            </button>
-
-
-            <div class="line"></div>
-        </div>
-    </div>
-    <!--[   navbar end   ]-->
-
-
-
-    <!-- Button trigger modal -->
+			
+			   <!-- Button trigger modal -->
     <div class="btn1">
         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
             Rediger profil
         </button>
-    </div>
-
-    <!-- Modal -->
+		<!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -131,6 +121,14 @@
             </div>
         </div>
     </div>
+		
+    </div>
+
+
+            <div class="line"></div>
+        </div>
+    <!--[   navbar end   ]-->
+
 
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

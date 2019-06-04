@@ -29,7 +29,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>&#60;UBU&#62;</h3>
+                <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text" 
             </div> 
             <ul class="list-unstyled components">                                                 <!-- class list with the different sides  -->  
                 <li class="active"><a href="prosjekter.html"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                   
@@ -51,41 +51,10 @@
             <div class="line"></div>
             <div id="board">
 				<a class="btn btn-primary"  id="linkButton" href="board.html" role="button" ></a>
-				<a class="btn btn-primary"  id="link2Button" href="board.html" role="button" ></a>
+				<button type="button" id="link2Button" class="btn btn-primary"><i class="fas fa-plus" href="board.html"></i>
+        </button>
 				<p id="prosjekt_navn">Prosjekt navn</p>
 				<p id="prosjekt_ny">Ny prosjekt</p>
-                
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"></button>
-                
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <form>
-                                      <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                      </div>
-                                    </form>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Send message</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
 	   </div>	
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
