@@ -1,11 +1,4 @@
-function set(property, value){
-        document.getElementById(property).innerHTML = value;
-}
-
-/* function get(property){
-        return document.getElementById(property).innerHTML;        
-}; */
-
+// USER DATA
 
 var users = [
     {
@@ -22,7 +15,7 @@ var users = [
         email: "gunnar@gunnarsen.com",
         dob: "03/11-1995",
         username: "gunnarg",
-        password: "gunnar123",        
+        password: "gunnar123",
     },
     {
         id: 3,
@@ -34,3 +27,37 @@ var users = [
     }
 ];
 
+// GROUP DATA
+
+/* var group = [
+    {
+        id: 1,
+        name: "Gruppe 1",
+        members: users.name[0], users.name[1], users.name[2];
+    }
+]; */
+
+// PROJECT DATA
+
+var projects = [
+    {
+        id: 1,
+        name: "Project1",
+        description: "Cool project"
+    },
+    {
+        id: 2,
+        name: "Project2",
+        description: "Lame project"
+    }
+];
+
+// TASK DATA
+
+var tasks = [
+    {
+        id: 1,
+        name: "Task1",
+        dueDate: "2019-06-07"
+    }
+];
