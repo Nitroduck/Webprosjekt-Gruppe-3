@@ -55,7 +55,7 @@ function newElement() {
 }
 
 //scroll function --- funker ikke.
-/*
+
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -64,4 +64,3 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-*/
