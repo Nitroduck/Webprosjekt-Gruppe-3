@@ -104,12 +104,20 @@
     </script>
 
     <script>
+        //Drag and drop function
+        if (itemID == null){
+                var itemID = 0;
+            };
     $('#createProject').click(function() {
-            var $hei = $('<div id="linkButton"  data-toggle="modal" data-target="#exampleModal"></div>');
+            var $hei = $('<div class="board" id="linkButton" data-toggle="modal" data-target="#exampleModal"></div>');
             $('#board').append($hei);
-            
+        
+    
         });
+        
+        
     </script>
 
  </body>
 </html>
+    

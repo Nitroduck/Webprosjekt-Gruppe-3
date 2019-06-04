@@ -29,7 +29,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-               <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text"> 
+               <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text" >
             </div> 
             <ul class="list-unstyled components">                           <!-- class list with the different sides  -->  
                 <li><a href="projects.html"><i class="far fa-clipboard"></i><br>Prosjekter</a></li>                        
@@ -50,50 +50,76 @@
             <h2 class="pt-4" contenteditable="true">Prosjekt navn</h2>
             <div class="line"></div>
             <div id="board">
-                <div><button id="addItem">Add box</button></div>
-                <h4 id="boardTodo" contenteditable="true">To do</h4>
-                <h4 id="boardInprogress" contenteditable="true">In progress</h4>
-                <h4 id="boardDone" contenteditable="true">Done</h4>
-                <div id="todo" class="boardProgress"></div>
-                <div id="inprogress" class="boardProgress"></div>
-                <div id="done" class="boardProgress"></div>
-            </div>
-            <div id="items">
-            </div>  
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  				<div class="modal-dialog" role="document">
-				<div class="modal-content">
-				  <div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Update item</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					  <span aria-hidden="true">&times;</span>
-						</button>
-						  </div>
-						  <div class="modal-body">
-							<form>
-							  <div class="form-group">
-								<label for="recipient-name" class="col-form-label">Title:</label>
-								<input type="text" class="form-control" id="recipient-name">
-							  </div>
-							  <div class="form-group">
-								<label for="message-text" class="col-form-label">Description:</label>
-								<textarea class="form-control" id="message-text"></textarea>
-							  </div>
-								<div class="form-group">
-								<label for="recipient-name" class="col-form-label">Unassigned</label>
-								<input type="text" class="form-control" id="recipient-name">
-							  </div>
-							</form>
-						  </div>
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
-						  </div>
-						</div>
-					  </div>
-					</div>
+                <div><button id="addItem">Legg til oppgave</button></div>
 
-	   </div>	
+                <div id="todo" class="boardProgress">
+                    <h4 id="boardTodo">Ikke påbegynt</h4>
+                    <p></p>
+                    <div class="dragItems" id="item22" >
+                        <i class="far fa-trash-alt" onclick="myFunction()"></i>
+                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
+                        <h6 id="taskNameItem">Navn på oppgave</h6>
+                        <span id="taskTag" class="badge-outline">En tag til oppgaven</span>
+                        <p id="taskDescItem">- Beskrivelse 1<br>- Beskrivelse 2</p>
+                   </div>
+                </div>
+                <div id="inprogress" class="boardProgress" >
+                    <h4 id="boardInprogress">I arbeid</h4>
+                    <p></p>
+                </div>
+                <div id="done" class="boardProgress">
+                    <h4 id="boardDone">Ferdig</h4>
+                    <p></p>
+                    <div class="dragItems" data-toggle="modal" data-target="#exampleModal"  >
+                        <i class="far fa-trash-alt" onclick="myFunction()"></i>
+                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
+                        <h6 id="taskNameItem">Fullføre design på board</h6>
+                        <span id="taskTag" class="badge-outline">Board design</span>
+                        <p id="taskDescItem">- Designe flyt<br>- Designe bokser mellom flyt</p>
+                    </div>
+                </div>
+                
+
+            <!-- Popup Modal for content edit--> 
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Rediger oppgave</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                      </div>
+                      <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Oppgave:</label>
+                            <input type="text" class="form-control" id="taskName">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Beskrivelse:</label>
+                            <textarea class="form-control" id="taskDescription"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tag:</label>
+                            <input type="text" class="form-control" id="taskTag">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Ansvarlig:</label>
+                            <input type="text" class="form-control" id="taskUser">
+                        </div>
+                      </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Lukk</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="save()">Oppdater</button>
+                      </div>
+                    </div>
+                </div>
+					    </div>
+
+	   </div>
+        </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -116,10 +142,16 @@
         }); 
     
         //Drag and drop function
-        
+        if (itemID == null){
+                var itemID = 0;
+            };
+         
+        //Add function, create a item with a modal and a uniqe ID
         $('#addItem').click(function() {
-            var $box = $('<div id="dragItemNew" class="dragItems" data-toggle="modal" data-target="#exampleModal"></div>');
-            $('#items').append($box);
+            itemID++;
+            var $box = $('<div class="dragItems" id="'+itemID+'" data-toggle="modal" data-target="#exampleModal" onClick="reply_click(this.id)"><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p></div>');
+            
+            $('#todo').append($box);
             $( ".dragItems" ).draggable();
         });
         $( ".dragItems" ).draggable();
@@ -127,14 +159,57 @@
         $( ".boardProgress" ).droppable({
             accept: ".dragItems",
             drop: function( event, ui ) {
+                ui.draggable.draggable();
                var droppable = $(this);
                var draggable = ui.draggable;
                // Move draggable into droppable
                draggable.appendTo(droppable);
-                draggable.css({top: '0%', left: '35px', marginTop: '10px'});
+                draggable.css({top: '0', left: '0', marginTop: '0'});
             }
         });
-		
+        
+    $(document).ready(function() {
+           $('#item').draggable({
+                containment: "parent"
+            }).filter('#item').draggable("option", "axis", "x");
+            
+        });
+        
+            function myFunction() {
+              var x = document.getElementById("item22");
+              x.remove(x.selectedIndex);
+            }
+
+        function reply_click(clicked_id)
+            {
+                alert(clicked_id);
+            }
+        
+        //Save info from task when btn click and make it uniqe
+        function save() {
+
+            
+            //Formdata
+            var name = document.getElementById('taskName').value;
+            var descrtiption = document.getElementById('taskDescription').value;
+            var user = document.getElementById('taskUser').value;
+            
+            //Data in kanban. The concat() is used to join two or more arrays / data.
+            var nameID = 'taskNameItem'.concat(itemID);
+            var taskID = 'taskDescItem'.concat(itemID);
+            
+            var taskName = document.getElementById(nameID);
+            var taskDesc = document.getElementById(taskID);
+
+            taskName.innerHTML = name;
+            taskDesc.innerHTML = descrtiption;
+           
+            
+            //alert('clicked_id');
+            
+            
+        }
+
     </script>
 
 
