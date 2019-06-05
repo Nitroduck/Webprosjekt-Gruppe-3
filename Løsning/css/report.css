@@ -1,13 +1,33 @@
 .container{
     position: fixed;
-    left: 200px;
-    top: 200px;
+    height: 100%;
+    width: 100%;
     
     
 }
 
-#container {
+#reportContent {                                                   
+    width: 100%;                      /*Content function, decides position*/
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    color: #006d9c;
+}
+
+#textContainer{
     position: relative;
+    margin: auto;
+    width: 40%;
+    height: 50%;
+    display: inline-block;
     
 }
+
+#submitButton{
+    position: relative;
+    top: 15px;
+
+}
+
+
 
