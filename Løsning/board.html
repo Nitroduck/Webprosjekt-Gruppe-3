@@ -145,6 +145,7 @@
         if (itemID == null){
                 var itemID = 0;
             };
+		
          
         //Add function, create a item with a modal and a uniqe ID
         $('#addItem').click(function() {
@@ -203,8 +204,12 @@
 
             taskName.innerHTML = name;
             taskDesc.innerHTML = descrtiption;
-           
-            
+			
+			 //Reset the modal input, but doesnt remember each individual input data
+		     $('#exampleModal').on('hidden.bs.modal', function () {
+              $(this).find('form').trigger('reset');
+})
+			
             //alert('clicked_id');
             
             
