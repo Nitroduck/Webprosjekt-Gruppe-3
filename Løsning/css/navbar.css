@@ -1,19 +1,15 @@
-/*
-    DEMO STYLE
-*/
-
 @import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;            /*Body standard like font and background color*/
-    background: #f8fafa;
+    background: #fafafa;
 }
 
 p {
     font-family: 'Poppins', sans-serif;           /*paragraph standard*/
-    font-size: 1.0em;
+    font-size: 1.1em;
     font-weight: 300;
-    line-height: 1.5em;
-    color: #666;
+    line-height: 1.7em;
+    color: #999;
 }
 
 a,
@@ -46,10 +42,6 @@ a:focus {
     margin: 0px 0;
 }
 
-h2 {
-	color: #006d9c;
-	cursor: text;
-}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -60,11 +52,16 @@ h2 {
     align-items: stretch;
 }
 
+#toDo-logo{
+	width: 80%;
+	padding: 0%;
+}
+
 #sidebar {
     min-width: 105px;                             
     max-width: 105px;
     background: #006d9c;
-    color: white;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
+    color: #fff;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
     transition: all 0.3s;
     text-align: center;
 }
@@ -139,41 +136,7 @@ a.article:hover {
 }
 
 .fa-users {
-    font-size: 180%;             /* icon size edit */
-}
-
-#toDo-logo {
-    width: 80%;
-}
-
-.fa-trash-alt, .fa-edit {
-    font-size: 100%;
-    float: right;
-    padding-left:5px; 
-}
-
-.fa-trash-alt:hover, .fa-edit:hover {
-    color: #006d9c;
-    transition: 0.2s;
-    transform: scale(1.2);
-}
-
-
-
-/* -----------------------------------
-    BOARD CONCEPT
--------------------------------------*/
-
-#generate {
-	width: 130%;
-	margin-left: -1780%;
-	margin-top: 145%;
-	background-color: #006d9c;
-}
-
-#generate:hover {
-	background-color: white;
-	color: #006d9c
+    font-size: 180%;             /* icon (gruppe) size edit */
 }
 
 
@@ -186,13 +149,13 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    color: #006d9c;
 }
 
 #sidebarCollapse {                                     /*Content function, decides color*/
     color: white;
     background-color: #993c3c;
 }
-
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -209,111 +172,3 @@ a.article:hover {
         display: none;
     }
 }
-
-#board {
-    width: 100%;
-    margin: 0 0 0 0;
-}
-
-.boardProgress {
-    float: left;
-    width: 300px;
-    min-height: 80vh;
-    padding: 10px;
-    margin: 2% 2% 0 0;
-    background-color: #F6F6F6;
-    
-}
-
-#todo{
-    border-top: 5px solid #40abcc;
-}
-#inprogress{
-    border-top: 5px solid #cc9b40;
-}
-#done{
-    border-top: 5px solid #40cc6f;
-}
-#done h6{
-    text-decoration: line-through;
-}
-h6{
-    margin-bottom: 2px;
-}
-
-.dragItems {
-    font-size: 15px;
-	-webkit-box-shadow: 1px 1px 1px 1px rgba(214,214,214,0.5);
-    -moz-box-shadow: 1px 1px 1px 1px rgba(214,214,214,0.5);
-    box-shadow: 1px 1px 1px 1px rgba(214,214,214,0.5);
-    min-height: 100px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: #fff;
-    color: #000;
-	font-family: 'Poppins', sans-serif;
-	transition: transform .2s;
-    margin: 0 0 10px 0;
-    padding: 10px;
-	position: relative;
-	cursor: pointer;
-	
-}
-
-#dragItem:hover {
-	transform: scale(1.1)
-}
-
-h4 {
-    font-family: sans-serif;
-    font-size: 20px;
-    cursor: text;
-    color: rgb(71, 71, 71);
-}
-
-#addItem {
-    color: white;
-    background-color: #993c3c;
-    width: 8%;
-    height: 40px;
-    font-size: 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-	margin-top: 10px;
-    border:0;
-    cursor: pointer;
-    
-
-}
-
-#addItem:hover {
-    background-color: darkred;
-    transition: 0.3s;
-}
-
-.badge-outline {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 600;
-    padding: 3px 6px;
-    border: 1px solid transparent;
-    min-width: 10px;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border-radius: 3px;
-    border-color: #B0BEC5;
-    color: #B0BEC5;
-    margin-bottom:2px; 
-}
-
-
-#remove {
-    color: aliceblue;
-    width: 5%;
-    margin-left: 5%;
-    background-color: black;
-}
-
