@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 /* navbar start */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
@@ -146,6 +150,9 @@ a.article:hover {
 }
 
 #sidebarCollapse {                                     /*Content function, decides color*/
+    position: relative;
+    left: -10px;
+    top: -10px;
     color: white;
     background-color: #993c3c;
 }
@@ -167,32 +174,35 @@ a.article:hover {
 }
 /*navbar end */
 
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 0px 0;
-}
-
 h2 {
-    
+    position: relative;
+    top: 15px;
+    left: -10px;
+    font-family: 'Poppins', sans-serif;
 	color: #006d9c;
 	cursor: text;
 }
 
+#line{
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin-left: -10px;
+}
+
 .fa-user-circle{
-    position: absolute;
-    left: 280px;
-    top: 150px;
+    position: relative;
+    left: 150px;
     font-size: 250px;
     color: darkgrey;
 }
 
 .user-name{
-    position: absolute;
-    top: 420px;
-    left: 275px;
+    position: relative;
+    top: 350px;
+    left: 160px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: rgb(50, 50, 50);
@@ -200,8 +210,8 @@ h2 {
 }
 
 h2.contact{
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: -245px;
     left: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -209,37 +219,40 @@ h2.contact{
 }
 
 .info-1{
-    position: absolute;
+    position: relative;
     display: block;
-    top: 230px;
+    top: -245px;
     left: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    border-bottom: 1px solid dimgray;
+    border-bottom: 1px solid rgb(202, 194, 194);
+    margin-right: 710px;
     
 }
 
 h2.dob{
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: -200px;
     left: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     color: darkgray;
+
 }
 
 .info-2{
-    position: absolute;
-    top: 330px;
+    position: relative;
+    top: -200px;
     left: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    border-bottom: 1px solid dimgray;
+    border-bottom: 1px solid rgb(202, 194, 194);
+    margin-right: 710px;
 }
 
 h2.level{
-    position: absolute;
-    top: 400px;
+    position: relative;
+    top: -165px;
     left: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -247,18 +260,19 @@ h2.level{
 }
 
 .info-3{
-    position: absolute;
-    top: 430px;
+    position: relative;
+    top: -165px;
     left: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    border-bottom: 1px solid dimgray;
+    border-bottom: 1px solid rgb(202, 194, 194);
+    margin-right: 710px;
 }
 
-.btn1{
-    position: absolute;
-    top: 120px;
-    left: 1300px;
+#editbtn{
+    position: relative;
+    top: -665px;
+    left: 1200px;
     
 }
 
