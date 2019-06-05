@@ -150,7 +150,7 @@
         //Add function, create a item with a modal and a uniqe ID
         $('#addItem').click(function() {
             itemID++;
-            var $box = $('<div class="dragItems" id="'+itemID+'" data-toggle="modal" data-target="#exampleModal" onClick="reply_click(this.id)"><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p></div>');
+            var $box = $('<div class="dragItems" id="'+itemID+'" onClick="reply_click(this.id)"><i class="far fa-trash-alt" onclick="myFunction()"></i><i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p></div>');
             
             $('#todo').append($box);
             $( ".dragItems" ).draggable();
@@ -172,12 +172,12 @@
     $(document).ready(function() {
            $('#item').draggable({
                 containment: "parent"
-            }).filter('#item').draggable("option", "axis", "x");
+            }).filter('#item').draggable("reset");
             
         });
         
             function myFunction() {
-              var x = document.getElementById("item22");
+              var x = document.getElementById(itemID.this);
               x.remove(x.selectedIndex);
             }
 
@@ -186,7 +186,7 @@
                 alert(clicked_id);
             }
         
-        //Save info from task when btn click and make it uniqe
+        //Save info from task when btn click and make it unique
         function save() {
 
             
@@ -210,6 +210,7 @@
               $(this).find('form').trigger('reset');
 })
 			
+		
             //alert('clicked_id');
             
             
