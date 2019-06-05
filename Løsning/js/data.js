@@ -15,7 +15,7 @@ var users = [
         email: "gunnar@gunnarsen.com",
         dob: "03/11-1995",
         username: "gunnarg",
-        password: "gunnar123",
+        password: "gunnar123"
     },
     {
         id: 3,
@@ -23,19 +23,19 @@ var users = [
         email: "nilsette@nilsen.com",
         dob: "03/11-1991",
         username: "nilsetten",
-        password: "nilsette123",
+        password: "nilsette123"
     }
 ];
 
 // GROUP DATA
 
-/* var group = [
+var groups = [
     {
         id: 1,
         name: "Gruppe 1",
-        members: users.name[0], users.name[1], users.name[2];
+        members: [users[0].name, users[1].name, users[2].name]
     }
-]; */
+];
 
 // PROJECT DATA
 
