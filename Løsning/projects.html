@@ -89,37 +89,9 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-   <!-- JS function for sidebar active  -->  
     
-	<script type="text/javascript">  
-        
-        //Menu hide function
-        
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-             });
-        }); 
-   
-		
-    </script>
-
-    <script>
-		
-	
-        //Drag and drop function
-        if (itemID == null){
-                var itemID = 0;
-            };
-    
-    </script>
-    <script>
-       $('#createProject').on("click", function() {
-	itemID++;
-       var $box = $("#board").append('<button class="btn btn-primary" id="linkButton" onClick="reply_click(this.id) style="float:left" <p id="prosjekt_add+'+itemID+'"></p></button>');
+   <script src="/Løsning/js/projects.js"></script> 
   
-       });
-    </script>
 			
 
  </body>
