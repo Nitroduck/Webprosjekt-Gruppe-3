@@ -1,18 +1,17 @@
-function set(property, value){ //SETTER
-        document.getElementById(property).innerHTML = value;
+function set(property, value) { //SETTER
+    document.getElementById(property).innerHTML = value;
 }
 
 
-function publishReport(report){
-    
-let publishedReports = document.getElementById("reportContainer")
+function publishReport() {
 
-let reportDiv = document.createElement("div");
-    
-    reportDiv.classList.add("issuedReport");
-    reportDiv.innerHTML = "<p>" + document.getElementById("reportText").textContent + "<p>"
-    publishedReports.appendChild(reportDiv);        
+    let publishedReports = document.getElementById("reportContainer")
 
+    let reportDiv = document.createElement("div");
+
+    reportDiv.classList.add("publishedReport");
+    reportDiv.innerHTML = "<p>" + document.getElementById("reportText").value + "<p>"
+    publishedReports.appendChild(reportDiv);
 }
 
 
