@@ -99,9 +99,9 @@ h2.level{
 
 #editbtn{
     position: relative;
-    top: -665px;
-    left: 1200px;
-    
+	width: 12%;
+    margin-left: 100%;
+    top: -655px;
 }
 
 #modul-hr{
