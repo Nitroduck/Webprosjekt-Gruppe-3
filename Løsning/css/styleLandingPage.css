@@ -55,7 +55,7 @@ html,body{
 #loginBtn{
     position: absolute;
     top: 2px;
-    left: 1210px;
+    left: 1180px;
     width: 70px;
     border: 1px solid #006d9c;
     background-color: #006d9c;
@@ -71,7 +71,7 @@ html,body{
     top: 80px;
     z-index: 1;
     opacity: 0.15;
-    width: 650px;
+    width: 450px;
     position: sticky;
 }
 
@@ -88,28 +88,28 @@ html,body{
 }
 
 #study{
-    top: 200px;
+    top: 100px;
     left: 100px;
     font-family: 'Open sans', sans-serif;
     color: rgb(170, 170, 170);
 }
 
 #smarter{
-    top: 200px;
+    top: 100px;
     left: 340px;
     font-family: 'Open sans', sans-serif;
     color: #022f42
 }
 
 #get{
-    top: 300px;
+    top: 200px;
     left: 80px;
     font-family: 'Open sans', sans-serif;
     color: rgb(170, 170, 170);
 }
 
 #done{
-    top: 300px;
+    top: 200px;
     left: 480px;
     font-family: 'Open sans', sans-serif;
     color: #022f42;
@@ -117,8 +117,8 @@ html,body{
 
 #dummyText{
     position: absolute;
-    top: 450px;
-    left: 50px;
+    top: 350px;
+    left: 90px;
     width: 55%;
     color: rgb(133, 133, 133);
 }
@@ -126,8 +126,8 @@ html,body{
 
 /*email input*/
 #email{
-    top: 540px;
-    left: 70px;
+    top: 440px;
+    left: 90px;
 }
 
 #emailInput{
@@ -140,9 +140,10 @@ html,body{
 /*get started button*/
 #getStarted{
     position: absolute;
-    top: 545px;
-    left: 643px;
-    height: 45px;
+    top: 440px;
+    left: 668px;
+    height: 52px;
+	width: 110px;
     color: #ffffff;
     background-color: #006d9c;
     border: 1px solid #006d9c;
