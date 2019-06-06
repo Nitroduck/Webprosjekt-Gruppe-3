@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/board.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -55,7 +56,7 @@
                 <div id="todo" class="boardProgress">
                     <h4 id="boardTodo">Ikke påbegynt</h4>
                     <p></p>
-                    <div class="dragItems" id="item22" >
+                    <div class="dragItems" id="22" >
                         <i class="far fa-trash-alt" onclick="myFunction()"></i>
                         <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
                         <h6 id="taskNameItem">Navn på oppgave</h6>
@@ -124,6 +125,7 @@
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -150,7 +152,7 @@
         //Add function, create a item with a modal and a uniqe ID
         $('#addItem').click(function() {
             itemID++;
-            var $box = $('<div class="dragItems" id="'+itemID+'" onClick="reply_click(this.id)"><i class="far fa-trash-alt" onclick="myFunction()"></i><i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p></div>');
+            var $box = $('<div class="dragItems" id="'+itemID+'" onClick="reply_click(this.id)"><i id="trash" class="far fa-trash-alt" onclick="deleteFunction(this)"></i><i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p><p id="taskUserItem'+itemID+'" ></p></div>');
             
             $('#todo').append($box);
             $( ".dragItems" ).draggable();
@@ -169,21 +171,31 @@
             }
         });
         
-    $(document).ready(function() {
-           $('#item').draggable({
-                containment: "parent"
-            }).filter('#item').draggable("reset");
-            
+        $(document).ready(function() {
+               $('#item').draggable({
+                    containment: "parent"
+                }).filter('#item').draggable("reset");
+
         });
-        
-            function myFunction() {
-              var x = document.getElementById(itemID.this);
-              x.remove(x.selectedIndex);
-            }
 
         function reply_click(clicked_id)
             {
-                alert(clicked_id);
+                //Create/change cookie to clicked ID
+                $.cookie('click_cookie', clicked_id);
+                //alert('test');
+                
+                //Change task ID element to add clicked ID
+                document.getElementById('taskName').setAttribute('id','taskName' + $.cookie('click_cookie'));
+                document.getElementById('taskDescription').setAttribute('id','taskDescription' + $.cookie('click_cookie'));
+                document.getElementById('taskTag').setAttribute('id','taskTag' + $.cookie('click_cookie'));
+                document.getElementById('taskUser').setAttribute('id','taskUser' + $.cookie('click_cookie'));
+                
+                //Get and set correct input from Item   
+                document.getElementById('taskName' + $.cookie('click_cookie')).value = document.getElementById('taskNameItem' + $.cookie('click_cookie')).innerHTML;
+                document.getElementById('taskDescription' + $.cookie('click_cookie')).value = document.getElementById('taskDescItem' + $.cookie('click_cookie')).innerHTML;
+                document.getElementById('taskTag' + $.cookie('click_cookie')).value = document.getElementById('taskTagItem' + $.cookie('click_cookie')).innerHTML;
+                document.getElementById('taskUser' + $.cookie('click_cookie')).value = document.getElementById('taskUserItem' + $.cookie('click_cookie')).innerHTML;
+    
             }
         
         //Save info from task when btn click and make it unique
@@ -191,30 +203,45 @@
 
             
             //Formdata
-            var name = document.getElementById('taskName').value;
-            var descrtiption = document.getElementById('taskDescription').value;
-            var user = document.getElementById('taskUser').value;
+            var name = document.getElementById('taskName' + $.cookie('click_cookie')).value;
+            var descrtiption = document.getElementById('taskDescription' + $.cookie('click_cookie')).value;
+            var tag = document.getElementById('taskTag' + $.cookie('click_cookie')).value;
+            var user = document.getElementById('taskUser' + $.cookie('click_cookie')).value;
             
             //Data in kanban. The concat() is used to join two or more arrays / data.
-            var nameID = 'taskNameItem'.concat(itemID);
-            var taskID = 'taskDescItem'.concat(itemID);
+            var nameID = 'taskNameItem'.concat($.cookie('click_cookie'));
+            var descID = 'taskDescItem'.concat($.cookie('click_cookie'));
+            var tagID = 'taskTagItem'.concat($.cookie('click_cookie'));
+            var userID = 'taskUserItem'.concat($.cookie('click_cookie'));
             
             var taskName = document.getElementById(nameID);
-            var taskDesc = document.getElementById(taskID);
+            var taskDesc = document.getElementById(descID);
+            var taskTag = document.getElementById(tagID);
+            var taskUser = document.getElementById(userID);
 
             taskName.innerHTML = name;
             taskDesc.innerHTML = descrtiption;
+            taskTag.innerHTML = tag;
+            taskUser.innerHTML = user;
 			
 			 //Reset the modal input, but doesnt remember each individual input data
 		     $('#exampleModal').on('hidden.bs.modal', function () {
-              $(this).find('form').trigger('reset');
-})
-			
-		
+                 $(this).find('form').trigger('reset');
+                 document.getElementById('taskName' + $.cookie('click_cookie')).setAttribute('id','taskName');
+                 document.getElementById('taskDescription' + $.cookie('click_cookie')).setAttribute('id','taskDescription');
+                 document.getElementById('taskTag' + $.cookie('click_cookie')).setAttribute('id','taskTag');
+                 document.getElementById('taskUser' + $.cookie('click_cookie')).setAttribute('id','taskUser');
+             });
+		  
             //alert('clicked_id');
-            
-            
+               
         }
+        
+        //Delete Item
+        function deleteFunction(e) {
+          e.parentElement.remove();
+        }
+        
 
     </script>
 
