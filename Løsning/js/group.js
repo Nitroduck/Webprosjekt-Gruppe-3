@@ -28,13 +28,13 @@ list.addEventListener('click', function (ev) {
 }, false);
 
 // Create a new list item when clicking on the "Add" button
-document.getElementById("addBtn").onclick= newElement;
+
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
-    if (inputValue == false) {
+    if (inputValue === "") {
         alert("You must write something!");
     } else {
         document.getElementById("myUL").appendChild(li);
