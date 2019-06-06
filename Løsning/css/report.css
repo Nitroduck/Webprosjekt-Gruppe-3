@@ -1,4 +1,9 @@
+
 .container {
+
+/* Global container*/
+.container{
+
     position: fixed;
     height: 100%;
     width: 100%;
@@ -6,16 +11,27 @@
 
 }
 
+
 #reportContent {
     width: 100%;
     /*Content function, decides position*/
+
+/* Content structure*/
+#reportContent {                                                   
+    width: 100%;                      
+
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
     color: #006d9c;
 }
 
+
 #textContainer {
+
+/* Textbox container */
+#textContainer{
+
     position: relative;
     margin: auto;
     width: 40%;
@@ -24,13 +40,23 @@
 
 }
 
+
 #submitButton {
+
+/* Button for publishing */
+#submitButton{
+
     position: relative;
     top: 15px;
 
 }
 
+
 #reportContainer {
+
+/* Container for reports */
+#reportContainer{
+
     position: fixed;
     margin: auto;
     width: 40%;
@@ -39,6 +65,7 @@
     margin-left: 5%;
 }
 
+/* Individual reports */
 .publishedReport {
     margin: auto;
     height: 50px;
