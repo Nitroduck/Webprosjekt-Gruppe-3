@@ -73,7 +73,6 @@ ol {
   }
   
   .close:hover {
-    background-color: #006d9c;
     color: white;
   }
   
@@ -100,7 +99,8 @@ ol {
 	background-color: #F6F6F6;
   }
 
-  /*Style the "Add" button*/
+  
+
   .addBtn {
     padding: 10px;
     width: 25%;
@@ -118,6 +118,16 @@ ol {
     background-color: #F6F6F6;
 	  color: #993c3c;
   }
+
+/*Hides an unresolved close button*/
+#hiddenBox {
+	width: 10%;
+	position: absolute;
+	height: 10%;
+	margin-left: 80%;
+	margin-top: -10%;
+	background-color: #fafafa;
+}
 
   
  /*scroll-bar 
