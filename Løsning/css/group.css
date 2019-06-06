@@ -121,7 +121,7 @@ ol {
 
 /*Hides an unresolved close button*/
 #hiddenBox {
-	width: 10%;
+	width: 30%;
 	position: absolute;
 	height: 10%;
 	margin-left: 80%;
