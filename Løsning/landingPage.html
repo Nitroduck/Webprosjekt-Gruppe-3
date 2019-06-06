@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>toDO</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/styleLandingPage.css">
-        <!--fonts:-->
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans&display=swap" rel="stylesheet">
-      
-    </head>
+    <title>toDO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleLandingPage.css">
+    <!--fonts:-->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans&display=swap" rel="stylesheet">
 
-    <body>
-        <div id="mainContainer">
+</head>
+
+<body>
+    <div id="mainContainer">
         <!--top bar: ('login' is the only clickable button.)-->
         <div id="topBar">
-          <img id="logo" src="images/toDO-logoGradient.png">
-          <button type="home" id="homeBtn">Home</button>
-          <button type="contact" id="contactBtn">Contact</button>
-          <button type="About" id="aboutBtn">About</button>
-          <button type="faq" id="faqBtn">FAQ</button>
-          
+            <img id="logo" src="images/toDO-logoGradient.png">
+            <button type="home" id="homeBtn">Home</button>
+            <button type="contact" id="contactBtn">Contact</button>
+            <button type="About" id="aboutBtn">About</button>
+            <button type="faq" id="faqBtn">FAQ</button>
+
         </div>
-        
+
         <!--pictures:-->
         <img id="pic" src="images/check.png">
         <img id="illustration" src="images/selvportett.png">
@@ -40,51 +40,48 @@
         <!--'Get started' button. It can be clicked, but doesn't lead anywhere-->
         <a class="gsBtn" href="velkommen til toDO" id="getStarted">GET STARTED</a>
 
-        </div>
-
-        <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="loginBtn">Login</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="projects.html">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="images/student-avatar.png" alt="Avatar" class="avatar">
     </div>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+    <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="loginBtn">Login</button>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button class="btn" type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="projects.html">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/student-avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class="btn" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button class="btn" type="button" onclick="document.getElementById('id01').style.display='none'" id="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button class="btn" type="button" onclick="document.getElementById('id01').style.display='none'" id="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+    <!--JAVASCRIPT:-->
+    <script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
-<!--JAVASCRIPT:-->
-<script>
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-</script>
-
-        
-    </body>
-</html>
+</body></html>
 

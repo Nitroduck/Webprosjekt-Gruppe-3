@@ -1,34 +1,35 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
-body{
-	overflow: hidden;
+
+body {
+    overflow: hidden;
 }
 
 h2 {
     position: relative;
     top: 25px;
     font-family: 'Poppins', sans-serif;
-	color: #006d9c;
-	cursor: text;
+    color: #006d9c;
+    cursor: text;
 }
 
-#line{
+#line {
     position: relative;
     top: 25px;
     width: 100%;
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin-right: 1200px;
-    
+
 }
 
-.fa-user-circle{
+.fa-user-circle {
     position: relative;
     left: 150px;
     font-size: 250px;
     color: darkgrey;
 }
 
-.user-name{
+.user-name {
     position: relative;
     top: 350px;
     left: 160px;
@@ -38,7 +39,7 @@ h2 {
 
 }
 
-h2.contact{
+h2.contact {
     position: relative;
     top: -245px;
     left: 700px;
@@ -47,7 +48,7 @@ h2.contact{
     color: dimgray;
 }
 
-.info-1{
+.info-1 {
     position: relative;
     display: block;
     top: -245px;
@@ -56,10 +57,10 @@ h2.contact{
     font-size: 20px;
     border-bottom: 1px solid rgb(202, 194, 194);
     margin-right: 700px;
-    
+
 }
 
-h2.dob{
+h2.dob {
     position: relative;
     top: -200px;
     left: 700px;
@@ -69,7 +70,7 @@ h2.dob{
 
 }
 
-.info-2{
+.info-2 {
     position: relative;
     top: -200px;
     left: 700px;
@@ -79,7 +80,7 @@ h2.dob{
     margin-right: 700px;
 }
 
-h2.level{
+h2.level {
     position: relative;
     top: -165px;
     left: 700px;
@@ -88,7 +89,7 @@ h2.level{
     color: dimgray;
 }
 
-.info-3{
+.info-3 {
     position: relative;
     top: -165px;
     left: 700px;
@@ -98,16 +99,22 @@ h2.level{
     margin-right: 700px;
 }
 
-#editbtn{
+#editbtn {
     position: absolute;
-	width: 12%;
-	left: 80%;
+    width: 12%;
+    left: 80%;
     top: 5%;
-    
+    background-color: #993c3c;
+
+
 }
 
-#modul-hr{
+/*add button, hover effect*/
+#editbtn:hover {
+    background-color: darkred;
+    transition: 0.3s;
+}
+
+#modul-hr {
     border: 0px dotted red;
 }
-
-

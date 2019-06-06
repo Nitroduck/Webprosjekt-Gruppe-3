@@ -13,12 +13,13 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/board.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
- 
-	
 
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -30,10 +31,11 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-               <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text" >
-            </div> 
-            <ul class="list-unstyled components">                           <!-- class list with the different sides  -->  
-                <li><a href="projects.html"><i class="far fa-clipboard"></i><br>Projects</a></li>                        
+                <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text">
+            </div>
+            <ul class="list-unstyled components">
+                <!-- class list with the different sides  -->
+                <li><a href="projects.html"><i class="far fa-clipboard"></i><br>Projects</a></li>
                 <li class="active"><a href="board.html"><i class="far fa-clipboard"></i><br>Board</a></li>
                 <li><a href="user.html"><i class="far fa-user"></i><br>User</a></li>
                 <li><a href="group.html"><i class="fas fa-users"></i><br>Group</a></li>
@@ -43,11 +45,11 @@
 
         <!-- Page Content  -->
         <div id="content">
-        
-        <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>
-        </button>
-            
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+            </button>
+
             <h2 class="pt-4" contenteditable="true">My project</h2>
             <div class="line"></div>
             <div id="board">
@@ -56,72 +58,76 @@
                 <div id="todo" class="boardProgress">
                     <h4 id="boardTodo">To do</h4>
                     <p></p>
-                    <div class="dragItems" id="22" >
-                        <i class="far fa-trash-alt" onclick="myFunction()"></i>
+                    <div class="dragItems">
+                        <i class="far fa-trash-alt" onclick="deleteFunction(this)"></i>
                         <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
                         <h6 id="taskNameItem">Prototype evaluation</h6>
-                        <span id="taskTag" class="badge-outline">Tag</span>
+                        <span id="taskTagItem" class="badge-outline">Tag</span>
                         <p id="taskDescItem">- Description<br>- Description</p>
-                   </div>
+                        <p class="deadline" id="taskDateItem">07.06.2019</p>
+                    </div>
                 </div>
-                <div id="inprogress" class="boardProgress" >
+                <div id="inprogress" class="boardProgress">
                     <h4 id="boardInprogress">In progress</h4>
                     <p></p>
                 </div>
                 <div id="done" class="boardProgress">
                     <h4 id="boardDone">Done</h4>
                     <p></p>
-                    <div class="dragItems" data-toggle="modal" data-target="#exampleModal"  >
-                        <i class="far fa-trash-alt" onclick="myFunction()"></i>
-                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal" id="myEdit"></i>
+                    <div class="dragItems">
+                        <i class="far fa-trash-alt" onclick="deleteFunction(this)"></i>
+                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
                         <h6 id="taskNameItem">Finish board design</h6>
-                        <span id="taskTag" class="badge-outline">Board design</span>
+                        <span id="taskTagItem" class="badge-outline">Board design</span>
                         <p id="taskDescItem">- Drag and drop<br>- Generate new projects</p>
+                        <p class="deadline" id="taskDateItem">07.06.2019</p>
                     </div>
                 </div>
-                
-
-            <!-- Popup Modal for content edit--> 
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+            </div>
+        </div>
+        <!-- Popup Modal for content edit-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Edit assignment</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                      </div>
-                      <div class="modal-body">
-                      <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Task:</label>
-                            <input type="text" class="form-control" id="taskName">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Description:</label>
-                            <textarea class="form-control" id="taskDescription"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Tag:</label>
-                            <input type="text" class="form-control" id="taskTag">
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Assign to:</label>
-                            <input type="text" class="form-control" id="taskUser">
-                        </div>
-                      </form>
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="save()">Update</button>
-                      </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit assignment</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Task:</label>
+                                <input type="text" class="form-control" id="taskName">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Description:</label>
+                                <textarea class="form-control" id="taskDescription"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tag:</label>
+                                <input type="text" class="form-control" id="taskTag">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Assign to:</label>
+                                <input type="text" class="form-control" id="taskUser">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Deadline:</label>
+                                <input type="text" class="form-control" id="taskDate">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveForm()">Update</button>
                     </div>
                 </div>
-					    </div>
-
-	   </div>
+            </div>
         </div>
 
+    </div>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
@@ -132,12 +138,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 
-   <!-- JS function for sidebar active  --> 
-	<script src="js/board.js"></script>
-    
+    <!-- JS function for sidebar active  -->
+    <script src="js/board.js"></script>
 
 
 
 
- </body>
-</html>
+
+</body></html>

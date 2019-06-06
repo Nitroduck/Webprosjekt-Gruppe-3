@@ -1,57 +1,55 @@
 body {
-	background: linear-gradient(to right, black 50%,  white 50%);
+    background: linear-gradient(to right, black 50%, white 50%);
 }
 
 h1 {
-	font-style: normal;
-	text-align: center;
-	font-family: 'Anton', sans-serif;
-	font-size: 150px;
-	color: white;
-    }
+    font-style: normal;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 150px;
+    color: white;
+}
 }
 
 p {
-	font-style: normal;
-	font-size: 55px;
-	color: white;
+    font-style: normal;
+    font-size: 55px;
+    color: white;
 }
 
 #test {
-	font-style: normal;
-	font-family: 'Anton', sans-serif;
-	text-align: left;
-	font-size: 25px;
-	color: white;
-	position: absolute;
-	top: 0px;
+    font-style: normal;
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 0px;
 }
 
-.textChange
-    {
-		font-family: 'Anton', sans-serif;
-		letter-spacing: 5px;
-		color: black;
-    }
+.textChange {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    color: black;
+}
 
-#p-change
-    {
-		font-family: 'Anton', sans-serif;
-		letter-spacing: 5px;
-		color: papayawhip;
-		text-align: center;
-    }
+#p-change {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    color: papayawhip;
+    text-align: center;
+}
 
 #link {
-  background-color: dimgrey;
-  border: none;
-  position: absolute;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: -125px 0px 0px 570px;
-  cursor: pointer;
+    background-color: dimgrey;
+    border: none;
+    position: absolute;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -125px 0px 0px 570px;
+    cursor: pointer;
 }

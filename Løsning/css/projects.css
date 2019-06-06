@@ -1,71 +1,58 @@
+#projectList {
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+
 #linkButton {
-	width: 5%;
-	height: 100%;
-	padding: 5%;
-	margin-top: 15px;
-	border-radius: 35px;
-	color: black;
-	background-color: mediumslateblue;
-	border: none;
+    width: 5%;
+    height: 100%;
+    padding: 60px;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: black;
+    background-color: #006d9c;
+    border: none;
+    position: relative;
 }
 
-#link2Button {
-	width: 10%;
-	height: 8%;
-	padding: 4%;
-	margin-top: 15px;
-	margin-left: 55px;
-	border-radius: 35px;
-	background-color: white;
-	color: black;
-	border: none;
-	border-style: dashed;
-	border-width: 1.5px;
+/*add button, includes color, size, cursor*/
+#addItem {
+    color: white;
+    background-color: #993c3c;
+    width: 8%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+
+
 }
 
-#linkButton:hover {
-	margin-top: 5px;
-	transition-duration: 0.2s;
-	animation-duration: 2s;
+/*add button, hover effect*/
+#addItem:hover {
+    background-color: darkred;
+    transition: 0.3s;
 }
+
+
 
 #prosjekt_navn {
-	margin-left: 0%;
-	position: absolute;
+    margin-top: 7%;
 }
 
-#prosjekt_ny {
-	margin-left: 16%;
-	position: relative;
-}
-
-.fa-ellipsis-h {
-	margin-left: 120px;
-	margin-top: 28px;
-	color: white;
-	position: absolute;
-}
 
 prosjekt_add {
-	margin-left: 55%;
-	position: absolute;
-	color: white;
+    margin-left: 55%;
+    position: absolute;
+    color: white;
 }
+
 
 
 /* -----------------------------------
     BOARD CONCEPT
 -------------------------------------*/
-
-#generate {
-	width: 130%;
-	margin-left: -1780%;
-	margin-top: 245%;
-	background-color: #006d9c;
-}
-
-#generate:hover {
-	background-color: white;
-	color: #006d9c
-}
-

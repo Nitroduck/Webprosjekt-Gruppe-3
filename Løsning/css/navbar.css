@@ -4,16 +4,19 @@
 
 
 @import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
+
 body {
-    font-family: 'Poppins', sans-serif;            /*Body standard like font and background color*/
+    font-family: 'Poppins', sans-serif;
+    /*Body standard like font and background color*/
     background: #fafafa;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;           /*paragraph standard*/
+    font-family: 'Poppins', sans-serif;
+    /*paragraph standard*/
     font-size: 1.1em;
     font-weight: 300;
-    line-height: 1.7em;
+    line-height: 1.2em;
     color: #999;
 }
 
@@ -21,7 +24,8 @@ a,
 a:hover,
 a:focus {
     color: inherit;
-    text-decoration: none;               /*a standard for sidebar*/
+    text-decoration: none;
+    /*a standard for sidebar*/
     transition: all 0.3s;
 }
 
@@ -57,51 +61,59 @@ a:focus {
     align-items: stretch;
 }
 
-#toDo-logo{
-	width: 80%;
-	padding: 0%;
+#toDo-logo {
+    width: 80%;
+    padding: 0%;
 }
 
 #sidebar {
-    min-width: 105px;                             
+    min-width: 105px;
     max-width: 105px;
     background: #006d9c;
-    color: #fff;               /*Edits the sidebar, width, text-align, text color and sidebar color*/
+    color: #fff;
+    /*Edits the sidebar, width, text-align, text color and sidebar color*/
     transition: all 0.3s;
     text-align: center;
 }
 
 #sidebar.active {
-    margin-left: -105px;      /*Part of the sidebar responsive framework*/
+    margin-left: -105px;
+    /*Part of the sidebar responsive framework*/
 }
 
-#sidebar .sidebar-header {    /*Sidebar header, decided header location and color background*/
+#sidebar .sidebar-header {
+    /*Sidebar header, decided header location and color background*/
     padding: 20px 0px;
     background: #006d9c;
 }
 
 #sidebar ul.components {
-    padding: 0% 0% 0% 0%;             /* Edit sidebar position */
+    padding: 0% 0% 0% 0%;
+    /* Edit sidebar position */
     border-bottom: 1px solid #006d9c;
 }
 
-#sidebar ul p {                        
+#sidebar ul p {
     color: #fff;
     padding: 10px;
 }
 
-#sidebar ul li a {           /*Sidebar ul li a, decides the bars font size, display and space between each other */
+#sidebar ul li a {
+    /*Sidebar ul li a, decides the bars font size, display and space between each other */
     padding: 18px;
     font-size: 0.9em;
     display: block;
 }
 
-#sidebar ul li a:hover {      /*sidebar hover, decides the color when hover*/
+#sidebar ul li a:hover {
+    /*sidebar hover, decides the color when hover*/
     color: #006d9c;
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {                         /*Sidebar active button, changes the color of the active sidebar*/
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    /*Sidebar active button, changes the color of the active sidebar*/
     color: #006d9c;
     background: #fff;
 }
@@ -137,35 +149,39 @@ a.article:hover {
 }
 
 .far {
-    font-size: 180%;             /* icon size edit */
+    font-size: 180%;
+    /* icon size edit */
 }
 
 .fa-users {
-    font-size: 180%;             /* icon (gruppe) size edit */
+    font-size: 180%;
+    /* icon (gruppe) size edit */
 }
 
-.fa-trash-alt, .fa-edit {
+.fa-trash-alt,
+.fa-edit {
     font-size: 100%;
     float: right;
-    padding-left:5px; 
+    padding-left: 5px;
 }
 
-.fa-trash-alt:hover, .fa-edit:hover {
+.fa-trash-alt:hover,
+.fa-edit:hover {
     color: #006d9c;
     transition: 0.2s;
     transform: scale(1.2);
 }
 
 .fa-plus {
-	font-size: 150%;
-	color: darkgray;
+    font-size: 150%;
+    color: darkgray;
 }
 
 .fa-plus:hover {
-	color: black;
-	transform: scale(1.5);
-	transition: 0.5s;
-		
+    color: black;
+    transform: scale(1.5);
+    transition: 0.5s;
+
 }
 
 
@@ -173,15 +189,17 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 
-#content {                                                   
-    width: 100%;                      /*Content function, decides position*/
+#content {
+    width: 100%;
+    /*Content function, decides position*/
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
     color: #006d9c;
 }
 
-#sidebarCollapse {                                     /*Content function, decides color*/
+#sidebarCollapse {
+    /*Content function, decides color*/
     color: white;
     background-color: #993c3c;
 }
@@ -190,13 +208,17 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {                            /*Content function, decides color*/
+@media (max-width: 768px) {
+
+    /*Content function, decides color*/
     #sidebar {
         margin-left: -250px;
     }
+
     #sidebar.active {
         margin-left: 0;
     }
+
     #sidebarCollapse span {
         display: none;
     }

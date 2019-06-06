@@ -1,35 +1,36 @@
-.container{
+.container {
     position: fixed;
     height: 100%;
     width: 100%;
-    
-    
+
+
 }
 
-#reportContent {                                                   
-    width: 100%;                      /*Content function, decides position*/
+#reportContent {
+    width: 100%;
+    /*Content function, decides position*/
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
     color: #006d9c;
 }
 
-#textContainer{
+#textContainer {
     position: relative;
     margin: auto;
     width: 40%;
     height: 50%;
     display: inline-block;
-    
+
 }
 
-#submitButton{
+#submitButton {
     position: relative;
     top: 15px;
 
 }
 
-#reportContainer{
+#reportContainer {
     position: fixed;
     margin: auto;
     width: 40%;
@@ -43,6 +44,3 @@
     height: 50px;
     border: 1px dashed #ddd;
 }
-
-
-
