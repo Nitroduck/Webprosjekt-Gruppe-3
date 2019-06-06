@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <title>toDO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/profil.css">
 
 
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/profil.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Font Awesome JS -->
@@ -36,8 +36,7 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <img id="toDo-logo" src="images/logo-hvit-liten.png" ALT="some text">
-            </div>
-                 
+            </div>               
            
 
             <ul class="list-unstyled components">
@@ -61,7 +60,7 @@
 			
 			   
         <h2 class="page-header">My profile</h2>
-        <div class="line"></div>
+        <div id="line"></div>
     
 
     <div class="user-name">
@@ -84,7 +83,7 @@
 			
 			   <!-- Button trigger modal -->
     <div class="btn1">
-        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Edit profile</button>
+        <button type="button" id="editbtn" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Edit profile</button>
     </div>
 
     <!-- Modal -->
@@ -137,7 +136,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/users.js"></script>
+    <script src="js/data.js"></script> <!-- data objects -->
+    <script src="js/functionality.js"></script>
 
     <!-- JS function for sidebar active  -->
     <script type="text/javascript">
@@ -146,16 +146,13 @@
                 $('#sidebar').toggleClass('active');
             });
         });
-    </script>
 
-    <script>
+        // Set userdata
         set("user-name", users[0].name);
         set("my-mail", users[0].email);
         set("my-dob", users[0].dob);
-    </script>
-
-
-    <script>
+        
+        // Enter new uservalues
         function myFunction() {
             var fName = document.getElementById("fullName").value;
             document.getElementById("user-name").innerHTML = fName;
