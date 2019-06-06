@@ -7,7 +7,7 @@ p {
 }
 
 
-
+/*h2 standard*/
 h2 {
 	color: #006d9c;
 	cursor: text;
@@ -17,25 +17,7 @@ h2 {
     BOARD CONCEPT
 -------------------------------------*/
 
-#generate {
-	width: 130%;
-	margin-left: -1780%;
-	margin-top: 145%;
-	background-color: #006d9c;
-}
-
-#generate:hover {
-	background-color: white;
-	color: #006d9c
-}
-
-
-
-#board {
-    width: 100%;
-    margin: 0 0 0 0;
-}
-
+/*Boardprogress standard*/
 .boardProgress {
     float: left;
     width: 300px;
@@ -46,6 +28,7 @@ h2 {
     
 }
 
+/*The different boards (boardprogress)*/
 #todo{
     border-top: 5px solid #40abcc;
 }
@@ -62,6 +45,7 @@ h6{
     margin-bottom: 2px;
 }
 
+/*Item design, how it looks*/
 .dragItems {
     font-size: 15px;
 	-webkit-box-shadow: 1px 1px 1px 1px rgba(214,214,214,0.5);
@@ -85,6 +69,7 @@ h6{
 	transform: scale(1.1)
 }
 
+/*Board titles, size, family and color standard*/
 h4 {
     font-family: sans-serif;
     font-size: 20px;
@@ -92,12 +77,13 @@ h4 {
     color: rgb(71, 71, 71);
 }
 
+/*add button, includes color, size, cursor*/
 #addItem {
     color: white;
     background-color: #993c3c;
     width: 8%;
     height: 40px;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 5px;
     margin-bottom: 10px;
 	margin-top: 10px;
@@ -107,11 +93,13 @@ h4 {
 
 }
 
+/*add button, hover effect*/
 #addItem:hover {
     background-color: darkred;
     transition: 0.3s;
 }
 
+/*item badge, is included in the tag option*/
 .badge-outline {
     display: inline-block;
     font-size: 10px;
@@ -130,7 +118,7 @@ h4 {
     margin-bottom:2px; 
 }
 
-
+/*remove icon / button */
 #remove {
     color: aliceblue;
     width: 5%;
