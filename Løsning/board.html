@@ -48,35 +48,35 @@
             <i class="fas fa-align-left"></i>
         </button>
             
-            <h2 class="pt-4" contenteditable="true">Prosjekt navn</h2>
+            <h2 class="pt-4" contenteditable="true">My project</h2>
             <div class="line"></div>
             <div id="board">
-                <div><button id="addItem">Legg til oppgave</button></div>
+                <div><button id="addItem">New</button></div>
 
                 <div id="todo" class="boardProgress">
-                    <h4 id="boardTodo">Ikke påbegynt</h4>
+                    <h4 id="boardTodo">To do</h4>
                     <p></p>
                     <div class="dragItems" id="22" >
                         <i class="far fa-trash-alt" onclick="myFunction()"></i>
                         <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
-                        <h6 id="taskNameItem">Navn på oppgave</h6>
-                        <span id="taskTag" class="badge-outline">En tag til oppgaven</span>
-                        <p id="taskDescItem">- Beskrivelse 1<br>- Beskrivelse 2</p>
+                        <h6 id="taskNameItem">Prototype evaluation</h6>
+                        <span id="taskTag" class="badge-outline">Tag</span>
+                        <p id="taskDescItem">- Description<br>- Description</p>
                    </div>
                 </div>
                 <div id="inprogress" class="boardProgress" >
-                    <h4 id="boardInprogress">I arbeid</h4>
+                    <h4 id="boardInprogress">In progress</h4>
                     <p></p>
                 </div>
                 <div id="done" class="boardProgress">
-                    <h4 id="boardDone">Ferdig</h4>
+                    <h4 id="boardDone">Done</h4>
                     <p></p>
                     <div class="dragItems" data-toggle="modal" data-target="#exampleModal"  >
                         <i class="far fa-trash-alt" onclick="myFunction()"></i>
                         <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal" id="myEdit"></i>
-                        <h6 id="taskNameItem">Fullføre design på board</h6>
+                        <h6 id="taskNameItem">Finish board design</h6>
                         <span id="taskTag" class="badge-outline">Board design</span>
-                        <p id="taskDescItem">- Designe flyt<br>- Designe bokser mellom flyt</p>
+                        <p id="taskDescItem">- Drag and drop<br>- Generate new projects</p>
                     </div>
                 </div>
                 
@@ -86,7 +86,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Rediger oppgave</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Edit assignment</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -94,11 +94,11 @@
                       <div class="modal-body">
                       <form>
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Oppgave:</label>
+                            <label for="recipient-name" class="col-form-label">Task:</label>
                             <input type="text" class="form-control" id="taskName">
                         </div>
                         <div class="form-group">
-                            <label for="message-text" class="col-form-label">Beskrivelse:</label>
+                            <label for="message-text" class="col-form-label">Description:</label>
                             <textarea class="form-control" id="taskDescription"></textarea>
                         </div>
                         <div class="form-group">
@@ -106,14 +106,14 @@
                             <input type="text" class="form-control" id="taskTag">
                         </div>
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Ansvarlig:</label>
+                            <label for="recipient-name" class="col-form-label">Assign to:</label>
                             <input type="text" class="form-control" id="taskUser">
                         </div>
                       </form>
                       </div>
                       <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Lukk</button>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="save()">Oppdater</button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="save()">Update</button>
                       </div>
                     </div>
                 </div>
