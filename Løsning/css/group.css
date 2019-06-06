@@ -2,22 +2,30 @@
    GROUP CONTENT
 ----------------------------------------------------- */
 /*Include the padding and border in an element's total width and height */
- ul.myUL {
+h2 {
+	margin-top: 30px;
+} 
+
+ol {
     box-sizing: border-box;
   } 
   /*Remove margins and padding from the list*/
-  ul.myUL {
-    margin: 0;
-    padding: 0;
+  ol {
+	
+    margin-left: -40px;
+	margin-top: 55px;
+	width: 75%;
   }
   /*Style the list items*/
-  ul.myUL li {
+  ol li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #eee;
+    padding: 1% 10% 2% 7%;
+    background-color: #F6F6F6;
     font-size: 18px;
     transition: 0.2s;
+	  list-style-type: none;
+	  color: black;
   
   /*make the list items unselectable */
 
@@ -27,24 +35,24 @@
     user-select: none;
   }
    /*Set all odd list items to a different color (zebra-stripes) */
-  ul.myUL li:nth-child(odd) {
-    background: #f9f9f9;
+  ol li:nth-child(odd) {
+    background: #F6F6F6;
   }
   
   /*Darker background-color on hover*/
-  ul.myUL li:hover {
+  ol li:hover {
     background: #ddd;
   }
   
    /*When clicked on, add a background color and strike out text*/
-  ul.myUL li.checked {
+  ol li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
   }
   
    /*Add a "checked" mark when clicked on*/
-  ul.myUL li.checked::before {
+  ol li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -71,10 +79,8 @@
   
   /*Style the header*/
   .header {
-    background-color: #006d9c;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
+    text-align: left;
+	margin-top: 15px;
   }
   /*Clear floats after the header*/
   .header:after {
@@ -91,13 +97,15 @@
     padding: 10px;
     float: left;
     font-size: 16px;
+	background-color: #F6F6F6;
   }
+
   /*Style the "Add" button*/
   .addBtn {
     padding: 10px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background: #993c3c;
+	color: white;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -107,7 +115,8 @@
   }
   
   .addBtn:hover {
-    background-color: #bbb;
+    background-color: #F6F6F6;
+	  color: #993c3c;
   }
 
   

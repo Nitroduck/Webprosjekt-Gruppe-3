@@ -1,5 +1,6 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:350,400,500,600,700";
 body{
-    overflow: hidden;
+	overflow: hidden;
 }
 
 h2 {
@@ -98,10 +99,10 @@ h2.level{
 }
 
 #editbtn{
-    position: relative;
+    position: absolute;
 	width: 12%;
-    margin-left: 100%;
-    top: -655px;
+	left: 80%;
+    top: 5%;
 }
 
 #modul-hr{

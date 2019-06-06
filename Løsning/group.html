@@ -49,33 +49,38 @@
             <button type="button" id="sidebarCollapse" class="btn btn-info">
                 <i class="fas fa-align-left"></i>
             </button>
+			<h2>Groups</h2>
             <div class="line"></div>
-        </div>
+			
+        
 
         <!-- navbar end -->
 
         <div id="myDIV" class="header">
-            <h2>Groups</h2>
             <input type="text" id="myInput" placeholder="Search...">
             <span onclick="newElement()" class="addBtn">Add</span>
+			
 
-            <!--scroll-bar. nødvendig?
+            
          <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+            <div class="progress-bar" id="myBar"></div> 
         </div>
-      </div> -->
-
-            <!--eksempelliste -->
-            <ul id="myUL">
+			
+			<!--eksempelliste -->
+            <ol class="myUL">
                 <li>Team Skogvold</li>
-                <li class="checked">Gruppe 3</li>
+                <li class="checked"> Gruppe 3</li>
                 <li>Prosjekt webprosjekt</li>
                 <li>Gruppe 4</li>
                 <li>TK prosjekt</li>
-                <li>Gruppe 6</li>
+                <li> Gruppe 6</li>
                 <li> ny gruppe</li>
 
-            </ul>
+            </ol>
+			
+      </div>
+</div>
+           
         </div>
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -94,6 +99,8 @@
                     $('#sidebar').toggleClass('active');
                 });
             });
+		
+			
         </script>
 
 
