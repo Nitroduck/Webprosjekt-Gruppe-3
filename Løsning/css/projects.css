@@ -35,8 +35,8 @@
 }
 
 #prosjekt_ny {
-	margin-left: 14.5%;
-	position: absolute;
+	margin-left: 16%;
+	position: relative;
 }
 
 .fa-ellipsis-h {
@@ -44,6 +44,12 @@
 	margin-top: 28px;
 	color: white;
 	position: absolute;
+}
+
+prosjekt_add {
+	margin-left: 55%;
+	position: absolute;
+	color: white;
 }
 
 

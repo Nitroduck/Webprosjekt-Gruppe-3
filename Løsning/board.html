@@ -73,7 +73,7 @@
                     <p></p>
                     <div class="dragItems" data-toggle="modal" data-target="#exampleModal"  >
                         <i class="far fa-trash-alt" onclick="myFunction()"></i>
-                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
+                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal" id="myEdit"></i>
                         <h6 id="taskNameItem">Fullføre design på board</h6>
                         <span id="taskTag" class="badge-outline">Board design</span>
                         <p id="taskDescItem">- Designe flyt<br>- Designe bokser mellom flyt</p>
@@ -152,7 +152,7 @@
         //Add function, create a item with a modal and a uniqe ID
         $('#addItem').click(function() {
             itemID++;
-            var $box = $('<div class="dragItems" id="'+itemID+'" onClick="reply_click(this.id)"><i id="trash" class="far fa-trash-alt" onclick="deleteFunction(this)"></i><i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p><p id="taskUserItem'+itemID+'" ></p></div>');
+            var $box = $('<div class="dragItems" id="'+itemID+'" onClick="reply_click(this.id)"><i id="trash" class="far fa-trash-alt" onclick="deleteFunction(this)"></i><i class="far fa-edit" id="myEdit'+itemID+'" data-toggle="modal" data-target="#exampleModal"></i><h6 id="taskNameItem'+itemID+'"></h6><span id="taskTagItem'+itemID+'" class="badge-outline"></span><p id="taskDescItem'+itemID+'" ></p><p id="taskUserItem'+itemID+'" ></p></div>');
             
             $('#todo').append($box);
             $( ".dragItems" ).draggable();
@@ -224,7 +224,7 @@
             taskTag.innerHTML = tag;
             taskUser.innerHTML = user;
 			
-			 //Reset the modal input, but doesnt remember each individual input data
+			 //Reset the modal input
 		     $('#exampleModal').on('hidden.bs.modal', function () {
                  $(this).find('form').trigger('reset');
                  document.getElementById('taskName' + $.cookie('click_cookie')).setAttribute('id','taskName');
@@ -239,8 +239,9 @@
         
         //Delete Item
         function deleteFunction(e) {
-          e.parentElement.remove();
+         e.parentElement.remove();
         }
+		
         
 
     </script>
