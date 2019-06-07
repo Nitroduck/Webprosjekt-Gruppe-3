@@ -1,0 +1,1294 @@
+C:\Users\oleto\Documents\GitHub\Webprosjekt-Gruppe-3>git log
+commit b3d350650da8fbe21e98a8f937993620669543a5 (HEAD -> master, origin/master, origin/HEAD)
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Fri Jun 7 12:25:17 2019 +0200
+
+    update
+
+commit d2d325b8d19ff56c1562d1368bd4dfa78c585b78
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Fri Jun 7 12:20:17 2019 +0200
+
+    Update kommentarer m.mer
+
+    Inndentering, oppdaterte kommentarer, fjernet kode som ikke fungerte eller var n<C3><B8>dvendig lenger ang scrollbar som var kommentert ut med /* */
+
+commit 6834792efab935651b5dafa646ee91c38ceff2ad
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Fri Jun 7 12:11:48 2019 +0200
+
+    update group names
+
+commit 3856dd1ef4ad0167cec4a1e59c5606963b0bd2e3
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri Jun 7 11:35:11 2019 +0200
+
+    update tune
+
+    - changed text on landing page
+
+commit 230000c0f7464d195d955d803e484cd8c27b8315
+Author: Nora <nbergseth@live.no>
+Date:   Fri Jun 7 09:55:28 2019 +0200
+
+    landing-page update
+
+commit c37346e311dcdc119428e8dd7f71b7734843c202
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri Jun 7 01:20:15 2019 +0200
+
+    Bug fix
+
+    - Corrected report.css errors caused by merging
+
+commit 0a1beee493d7ccdbe41f69e8c776c12279be9559
+Merge: d418364 cc0087e
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Fri Jun 7 01:05:22 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit d418364810b3cd905bcc393d08d1f0f63be1e90f
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Fri Jun 7 01:04:01 2019 +0200
+
+    Update - Final update
+
+    Big update, cleaing up code, functions for board, project. Button redesign and bug check.
+
+commit cc0087e7182930812af18961f8e39b3e16ad12d1
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu Jun 6 22:59:09 2019 +0200
+
+    Update report.css
+
+commit eb78c1fc10cb052823d64aa7ceed391e9ad27b47
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu Jun 6 21:47:24 2019 +0200
+
+    removed initial navbar folder
+
+    - sites refer to file in css, no longer needed
+
+commit 534a7c855eff74674d447eb61c35068fdb3b06f5
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 20:20:08 2019 +0200
+
+    Update report.html
+
+commit 850cb3f80f4bc278a7100a342e8f452c2a6ead3d
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 20:18:22 2019 +0200
+
+    Update
+
+    All text in english
+
+commit 4c932d2e1b5e0e53f2a581d0d76125a8ee64d9c3
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 19:50:35 2019 +0200
+
+    Update group.css
+
+commit b5668eab1b4f6c405fabf3fe9a8364aaf8507e47
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 19:44:25 2019 +0200
+
+    Update newElement working
+
+commit 33dfd0419148b8526421bd03755f970cee920b61
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 19:34:11 2019 +0200
+
+    update
+
+    span working
+    not creating new groups
+
+commit a1d3f02494d03079af4d378512b624d13b50ef69
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 16:30:46 2019 +0200
+
+    Update 12
+
+    resized some sites
+
+commit a62e6f2f6c90fdf546cd0d31fb1857480b3eb712
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 16:16:37 2019 +0200
+
+    add groups
+
+commit 49c5e7828f2c6fe218cb57d7aa81d7b83cd113f6
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 16:05:57 2019 +0200
+
+    Update 12
+
+    Fixing bugs!
+
+commit 3d57cb3bc50e4509b1c043565ab061124bbf4b38
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 15:37:59 2019 +0200
+
+    Update user.css
+
+commit c6a1a3b7eb4988afe1e7dbcff2e0878dbd7aea3a
+Merge: 8dfc9ed 5896cde
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 15:35:45 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 8dfc9ed46273ad4975a18ec5188b39d540932385
+Merge: 99775b2 e1ac842
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 15:35:32 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 5896cdea4952fe7f6aa614aa46b97e12a5d96df7
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu Jun 6 15:34:01 2019 +0200
+
+    update report
+
+    - adding divs works
+
+commit 99775b20da31ffa064bdfb3280474c6fb2af0ee4
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 15:33:25 2019 +0200
+
+    Update 11
+
+    Big changes
+
+commit e1ac842389d0769452f9b29230cb533ec08a4be9
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu Jun 6 15:04:32 2019 +0200
+
+    update report
+
+    + smaller fixes
+
+commit 5a3a529665aaf71b748d551cfadfe253c2fadeb9
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 14:46:53 2019 +0200
+
+    board.js
+
+commit 0fc68c93db5ab7690f9642223ff5b1ccbd800356
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 14:41:08 2019 +0200
+
+    projects.js
+
+commit 9a9937448d79a683f176c064cb68a5c3160ecef1
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 14:26:08 2019 +0200
+
+    create user.js
+
+commit 4ae30739493b3ad420e87fd4e4a26543e52de2e4
+Merge: 08cf424 b44933e
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 13:58:39 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 08cf42404e0546868267c8bb4d25f45f0c10a042
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 13:58:36 2019 +0200
+
+    update editbtn
+
+commit b44933e103a71d4f624ba91f9d2679f111c1d9fe
+Merge: 72caa28 8c427c8
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 13:51:33 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 72caa280a8a46b0f67cde085513d9add0c1787e0
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 13:51:30 2019 +0200
+
+    Update 10
+
+commit 8c427c8bb9cac225604c4e4feb874193a458e871
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 12:52:19 2019 +0200
+
+    Update board.html
+
+commit 5b52ee353b63ad6241d9e010bcf1abf9c09786c3
+Merge: 213962f 75d75ca
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 12:19:41 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 213962f3ae841f3aa5708fac78394db59e316e82
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 12:19:23 2019 +0200
+
+    Update profil.css
+
+commit 75d75ca9c6837c0f533bb3e32df281c0b1d15375
+Merge: 8b0617f 33da847
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Thu Jun 6 12:11:11 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 8b0617f2b2e52bafac182929850f8ea30482dcc2
+Merge: 5854786 3a11651
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Thu Jun 6 12:10:29 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 33da8475bfc9f56467d3411fb5d993103d53b949
+Merge: e751a19 3a11651
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu Jun 6 12:08:00 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit e751a1950e6e08d7f82dbe1d9cb24645bc70d079
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu Jun 6 12:07:44 2019 +0200
+
+    Changed to english
+
+    - navbar
+
+commit 58547860497eea8679e31593b2be5c621c86d1fe
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Thu Jun 6 12:02:51 2019 +0200
+
+    update
+
+commit 3a1165130dd743bf6bbdf2321ac1e44f5da8a6a0
+Merge: 755b733 d1a8a72
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 11:59:59 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 755b7330de263de331f53caba19fa193a9c70617
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 11:59:56 2019 +0200
+
+    small update 2
+
+commit d1a8a721e6cf2beac190dba6a1d2c2feeb17f338
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 11:59:45 2019 +0200
+
+    Update projects.html
+
+commit 30c68331e114ba7c5568f626b470bbad133dbd50
+Merge: e71c429 0f03284
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Thu Jun 6 11:33:16 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 0f03284199cbbe65c9e7189a7d89b7a73a647fa5
+Merge: 1b18610 5f33ff7
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 00:10:30 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 1b18610b905a80c1e6763b6eb902fa05943d4829
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu Jun 6 00:10:27 2019 +0200
+
+    Update 9
+
+    Board function, includes cookies and reset function. Delete also but not perfect..
+
+commit 5f33ff7a9a32243124f379d6fdc0f8856cfd4990
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 20:24:41 2019 +0200
+
+    update
+
+    - initial structure
+
+commit 0f3266cf28730471522caf2c862fb15894bd9bc3
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 17:02:45 2019 +0200
+
+    Isolated navbar.css
+
+    - added pathing to navbar.css on all pages
+    - removed sidebar styling from individual .css'
+
+commit 3cb2a6dc4b1757bf52000c453a09df70d9864753
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 16:38:18 2019 +0200
+
+    fixed data.js
+
+commit e71c42929a441fd10937a6d3630998af682d24b9
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 15:04:47 2019 +0200
+
+    Update projects.html
+
+commit 21ba732d6dde7ba09845d127158f660908ff5918
+Author: Nora <nbergseth@live.no>
+Date:   Wed Jun 5 14:47:10 2019 +0200
+
+    title update
+
+commit 8cb36797d0cdb7dbb881e0faa1f0da22fd39ad0f
+Merge: 2e27bda a8c4267
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 13:46:16 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 2e27bda946cbe2e2e2a60a97e6d75b2c2cc6c4bc
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 13:46:08 2019 +0200
+
+    Update board.html
+
+commit a8c4267cbbd471601cedf347c6f81450d0c8f0a8
+Merge: 8474b2d 3d9008b
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 13:44:45 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 8474b2d7c3109cd235357ffdab7d49acea550e29
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 13:44:41 2019 +0200
+
+    newBox float left
+
+commit 3d9008be92382c9d85c02ba13d28e4eae146fe42
+Merge: 1e8cf4b d8fe34a
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 13:44:34 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 1e8cf4bab3afebeaa77b8ab54fea2b5bea52ed65
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 13:44:31 2019 +0200
+
+    small update
+
+commit d8fe34a108ff4e8de6ec24471dadb2b63f97eef5
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 13:40:32 2019 +0200
+
+    updated report page
+
+commit 12f00ab29dd505b48f9872129d2fbbd96af29cb6
+Author: Nora <nbergseth@live.no>
+Date:   Wed Jun 5 13:11:56 2019 +0200
+
+    titile update - toDO
+
+commit 59a0188017824703ca5d6843865c9f5ae6f3e9ac
+Merge: 41ee4f3 3f91b52
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 12:52:39 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 41ee4f3f9c6e294b7925f8b9ee24f79214cdc74d
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 12:52:36 2019 +0200
+
+    porition fix
+
+commit 3f91b528d6a8da4554f30f5a9d2aa1e04353ea29
+Merge: 54019da 31d03ba
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 12:48:31 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 54019da61c2a5d8ed6a581729c3e619fdd97d6fd
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 12:48:27 2019 +0200
+
+    Update 8
+
+    Ny funksjon for board
+
+commit 31d03bad5b1473d5702e39497ff0a85af3d1c9bf
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 12:30:24 2019 +0200
+
+    moved javascrip to off-file
+
+commit e865fb86fb57b5bc9be665b6f5769088edbc3d04
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 12:19:06 2019 +0200
+
+    small fixes
+
+commit 57406362dbba37a4513eba6deb1d0f85f9fcdf7a
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 11:51:42 2019 +0200
+
+    Update projects.html
+
+    naming
+
+commit 272882414f09d7b496caaf5403cb129c5d0868c0
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Wed Jun 5 11:43:07 2019 +0200
+
+    closed img tag
+
+commit fe230d6f9146a9933cc4540f566c41a26a22b8f7
+Merge: c13d345 7111cfb
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 00:28:26 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit c13d3456df25485596cd31577ec9319ce615cb6f
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed Jun 5 00:28:17 2019 +0200
+
+    Update 7
+
+    Ny og bedre funksjoner, utformingen er bedre (design).
+
+commit 7111cfbaf6bc974637d944c2913156d25baf8402
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed Jun 5 00:18:15 2019 +0200
+
+    Update syntax structure
+
+    - removed file redundancy
+
+commit 34bb5beffea2332f919d719403e387e39fcf0ed0
+Merge: 04b3fac 215d457
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 15:00:56 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 04b3faca14284180ea0b474711a4101fe8083d42
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 15:00:49 2019 +0200
+
+    Board update
+
+    new project generator
+
+commit 215d45702aeb5d164676f2c6117068cd8ffc177d
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Tue Jun 4 14:22:20 2019 +0200
+
+    update group
+
+commit ca03545fa37053bdc1a36159a36d6ec7644f9f0e
+Merge: e91dd12 db0dae6
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 14:18:51 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit db0dae62a2cab99e363b2326d3d2aa57ccd84d9e
+Merge: 41532d3 dbac4d8
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue Jun 4 14:16:48 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 41532d355f02ec7d92ca65f904d21d0f92584e9f
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue Jun 4 14:16:40 2019 +0200
+
+    Update board.css
+
+commit dbac4d8818c4c6751c234e7d97d1a4fa980ebe8b
+Author: Nora <nbergseth@live.no>
+Date:   Tue Jun 4 14:16:20 2019 +0200
+
+    login updated from 'board' to 'projects'
+
+commit 8445ddfaa3dc2300bb48b194ab859866f6edd85d
+Merge: a2a5a00 a0fc6df
+Author: Nora <nbergseth@live.no>
+Date:   Tue Jun 4 14:15:43 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit e91dd122ec9d65cc4c56c1f0affb74cb2091d496
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 14:15:17 2019 +0200
+
+    update
+
+commit a2a5a00c8e193d3182d66686c9a4b4e778448b2e
+Author: Nora <nbergseth@live.no>
+Date:   Tue Jun 4 14:10:40 2019 +0200
+
+    login button
+
+commit a0fc6df779354744ca8243c8511844c29efc0a8a
+Merge: 267729d 149b6ad
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 13:33:36 2019 +0200
+
+    update
+
+commit 267729d73d0a090f3c83704d06b17f7a35b265c2
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 13:31:55 2019 +0200
+
+    font change
+
+commit 149b6ad38f5ccfcf877359856d96f1f3e0a06363
+Merge: dce6f4a 5731192
+Author: Nora <nbergseth@live.no>
+Date:   Tue Jun 4 13:31:21 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit dce6f4ad97142edc07ca1bbc7dae33290281009d
+Author: Nora <nbergseth@live.no>
+Date:   Tue Jun 4 13:27:04 2019 +0200
+
+    dummytext update to english
+
+commit 5731192cf6a7e33a686632d90e1be169396611d2
+Merge: 49460de 1bf422d
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue Jun 4 13:17:22 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 49460de46c85c43f8a6aee23655e11b80b63a79f
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue Jun 4 13:17:19 2019 +0200
+
+    Big update
+
+    Alt mulig
+
+commit 1bf422dbdd6215e36a69d6355bfdf7047a218dad
+Author: Nora <nbergseth@live.no>
+Date:   Tue Jun 4 12:25:12 2019 +0200
+
+    deleted unnecessary files
+
+commit a43ede3abf7b2e84501c7de749fdb007e6688e3b
+Merge: 66bf1ca 9af465e
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 12:15:21 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 66bf1caa272e0fa2a9f9cfc735dd5d59568954dc
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue Jun 4 11:51:28 2019 +0200
+
+    Update profil.css
+
+commit 9af465e3335280e83ff178eafc27e0f48896ef02
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue Jun 4 00:08:58 2019 +0200
+
+    Update 6
+
+    adjusts the baord and changed the design.
+
+commit 068962c287229af932dec64ee81caac4ae4055a2
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 18:49:20 2019 +0200
+
+    Setter: User data from object
+
+commit 6985e2984f25ad0cac15889d040052da3e13f6b5
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 17:34:13 2019 +0200
+
+    created objects
+
+    - objects for users, projects, tasks etc
+
+commit a993e46d18b3a0cef97d6dac57d203428b6c7920
+Merge: 43ca0f0 fdb8ccb
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 15:25:42 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 43ca0f0a40bb2c3093190dafd28102716efd7986
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 15:25:28 2019 +0200
+
+    deleted unnecessary images
+
+commit fdb8ccb935e0e8ae0c214ac5d826475242b861da
+Merge: e37d6c7 f04cae6
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 15:25:28 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit e37d6c7c3ff23309f9582c8ddd4078570fa4fe91
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 15:25:11 2019 +0200
+
+    Update 3 - prosjekt
+
+commit f04cae67e15ab3e5ecbaf091d53fcc75eccdf7d5
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 15:24:00 2019 +0200
+
+    added demo objects
+
+    added example objects for testing
+
+commit cc80a1715f4caac2b10cf80678aaaeb21cc1068e
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 15:07:15 2019 +0200
+
+    updated links, removed pages
+
+    - removed testForside, editprofil
+    - linked pages together
+
+commit 4ef053a0834b2ee8591eed646866268328105e11
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 15:03:33 2019 +0200
+
+    filename update
+
+commit b9a24dfd73af5c7c9bea90ca1f056122ce728af4
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 15:02:05 2019 +0200
+
+    Update 5
+
+commit b51300062be7e41cc86bc6c810f391af2bc0cb3f
+Merge: 167dbe9 7e7cd40
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 14:57:47 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 167dbe9638123c534d680079e47d31d668617330
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 14:57:37 2019 +0200
+
+    Test
+
+commit 7e7cd403498c63621ce4bcd7dfc69d2af163cff1
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Mon Jun 3 14:56:46 2019 +0200
+
+    Update board.css
+
+commit 4def90826f8409964e7683e84d4ae0708da6f4f2
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Mon Jun 3 14:54:40 2019 +0200
+
+    Revert "Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3"
+
+    This reverts commit 9121c1f4ba31335be6fdb2616b0595e4f3570e44, reversing
+    changes made to 626dfbac0e3ebb0f8a85049a55d1c1b8bb063f7b.
+
+commit 9121c1f4ba31335be6fdb2616b0595e4f3570e44
+Merge: 626dfba 9a30781
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Mon Jun 3 14:52:29 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 9a30781f644f8704cdc8e5f61f2679b1da53e4f0
+Merge: a0743ca f3c32ce
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 14:52:03 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 626dfbac0e3ebb0f8a85049a55d1c1b8bb063f7b
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Mon Jun 3 14:50:22 2019 +0200
+
+    update
+
+commit a0743ca23de85ce3f873a18e0cd9d78a959ef6ac
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 14:49:25 2019 +0200
+
+    Update 2 - prosjekt
+
+commit f3c32cea1e0fe440edc729a306b44aa98f240779
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 14:32:53 2019 +0200
+
+    Create report-page
+
+    + files
+
+commit c90004b6895f0a1209dd3ed476ed03df138b105c
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 14:21:26 2019 +0200
+
+    Prosjekt - update 1
+
+commit e4da12b2258f1901994b4e5f1cd96613bd0c3285
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 14:06:56 2019 +0200
+
+    filename update
+
+commit dc096a204b9657b1cc6f53c8ff4d6a2c80d4b843
+Merge: 54b808f 33388ac
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 14:03:28 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 54b808f96da6ee2d5912c6f2c30a5a9e8b911788
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 14:03:10 2019 +0200
+
+    update
+
+commit 33388ac4fb35696cec503963f2c88207dbbfc78d
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 13:57:02 2019 +0200
+
+    Revert "Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3"
+
+    This reverts commit 46ec3e6216222565ce426bbf1da6368c8ceee788, reversing
+    changes made to 4579cd7c5ce0a1795f6d349833e327f297e0a169.
+
+commit 0795fb79db02d7df5e93c3de512749ed7ac1bb97
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 13:56:41 2019 +0200
+
+    Revert "Update group.html"
+
+    This reverts commit 4579cd7c5ce0a1795f6d349833e327f297e0a169.
+
+commit 46ec3e6216222565ce426bbf1da6368c8ceee788
+Merge: 4579cd7 ff37427
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 13:52:38 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 4579cd7c5ce0a1795f6d349833e327f297e0a169
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 13:50:22 2019 +0200
+
+    Update group.html
+
+commit ff374272dc5df0fdc02db6beb0602ce781464d2e
+Merge: 57d1e64 01e2a5f
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:47:17 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 57d1e64edae1ec965f316110de45af166ec559f5
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:47:05 2019 +0200
+
+    created projects
+
+    created projects-page
+
+commit 01e2a5f13e20ca3a0a7e69e210bf480fa7322672
+Merge: 6b4ed13 703e56a
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 13:46:08 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 6b4ed134fe01f253735b72243a3fb3d80a0122f8
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Mon Jun 3 13:46:05 2019 +0200
+
+    Update 4
+
+    Initializing the board and it's functions. Includes model, text editor, somewhat new features for board.
+
+commit 703e56a5d3b2a1b9af97cf638d87650b30ba14d6
+Merge: c6b549b 6f0032a
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:40:48 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit c6b549b5f2860b9d69572ed64f433ae6d5bf7490
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:40:35 2019 +0200
+
+    Create report page
+
+    + report page
+    + html, css, js
+
+commit 6f0032a892633274ff12a98a411ddcb4d0c85f84
+Merge: cce172d 6f81e64
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Mon Jun 3 13:33:10 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit cce172dcbd29a6a47fbb08f4be3a5fa3bf4c14ff
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Mon Jun 3 13:33:04 2019 +0200
+
+    update
+
+commit 6f81e6471793c6e2eb40e61eb60a0634b2214451
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:32:19 2019 +0200
+
+    Deleted calendar
+
+    - Removed calendar page
+
+commit 58f1c041537cf9de2aac214d85e096685af14b5b
+Merge: d3d5583 dc494ba
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:28:36 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit d3d55835b034e9f22f9d31db775ff15a8a09023f
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon Jun 3 13:27:58 2019 +0200
+
+    Remove calendar
+
+    removed calendar form navbar
+
+commit dc494baa2adba9478d58ffc655a502960d57b820
+Merge: bc44254 8757e7c
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 13:21:44 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit bc44254f99bf8d7f4667b56b80f921ae4d302aa7
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 13:21:30 2019 +0200
+
+    css update
+
+commit 8757e7c64bc1cb31edaf152d35525f6f6b246918
+Merge: d493bdd 51499d2
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 13:04:33 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit d493bdd8e715c2514aa8d238bbfd0099ccb8416f
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 13:04:20 2019 +0200
+
+    Scroll funksjon, flyttet js over i .html
+
+    Forel<C3><B8>pig ikke-fungerende scroll funksjon, js fungerer ikke fra .js mappe.
+
+commit 51499d2cac3876996e1e5a7e732f12a189f08097
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 13:03:58 2019 +0200
+
+    login button update
+
+commit cd34b61dbc6c647bc1360c5ffe0f7eb5e83bc34c
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 12:56:11 2019 +0200
+
+    deleted unnecessary files
+
+commit d50a398fead2d78905ad2e7132f0833fbfbe4a66
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 12:52:22 2019 +0200
+
+    update login-form
+
+commit 2b264f8b7b64e065e00a6ae43be743744b57b1d0
+Merge: 316e4b8 a73b777
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 11:50:24 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 316e4b89a90289badf1fd6008ab938fb5bf9efe9
+Author: Nora <nbergseth@live.no>
+Date:   Mon Jun 3 11:50:03 2019 +0200
+
+    kommentering av kode
+
+commit a73b777be7997cac0adc031833cd4178c048a032
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 11:36:38 2019 +0200
+
+    Merged branch til master, flyttet filer over i riktig mapper
+
+commit 28928bb853792c7d224a61e6cbeeccbddd650b6d
+Merge: 9aa8881 fb54647
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 11:32:50 2019 +0200
+
+    Merge branch 'Markus'
+
+commit fb546475a4338c8d0547dbf6b4338424f2b05ab2 (origin/Markus)
+Author: marsko94 <36231539+Marsko94@users.noreply.github.com>
+Date:   Mon Jun 3 11:25:15 2019 +0200
+
+    Markus-kode
+
+commit 9aa8881722b9b2728043634e9b08dd8bfac364f6
+Merge: 75a9356 45d6707
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Sun Jun 2 23:46:43 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 75a9356dab95ef4205387cf6f2cb709b863ca6ab
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Sun Jun 2 23:46:39 2019 +0200
+
+    Update 3
+
+    Include drag, add and drop function
+
+commit 45d67072eb5c83f6ec6b1c7ba11464df04e7dc63
+Merge: 386c09e 7fff11f
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Sun Jun 2 19:37:55 2019 +0200
+
+    Merge pull request #1 from Nitroduck/Herman
+
+    Herman
+
+commit 7fff11f20252587efbde261c1c717c46234ae5ee
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Sun Jun 2 19:36:43 2019 +0200
+
+    Navbar link
+
+    - Linking navbar
+
+commit 386c09eaf7f730eb777521d7cf7cce6053bc3215
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Sun Jun 2 19:15:51 2019 +0200
+
+    Update 2
+
+commit dc6b4406ac7241066332a85789886d0bd2d78ced
+Author: Nora <nbergseth@live.no>
+Date:   Sun Jun 2 17:56:09 2019 +0200
+
+    oppdatering7
+
+commit 0d16ff48f5cf62654067007d2c36fd11369ef4b5
+Author: Nora <nbergseth@live.no>
+Date:   Sun Jun 2 17:22:23 2019 +0200
+
+    oppdatering6
+
+commit 0fcdd2526763869d4edf035d0af0aab32bfc804e
+Merge: b7e2c8b 363c4c3
+Author: Nora <nbergseth@live.no>
+Date:   Sat Jun 1 19:54:14 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit b7e2c8ba7c4e001cd4f3cd165b500074201e9574
+Author: Nora <nbergseth@live.no>
+Date:   Sat Jun 1 19:54:07 2019 +0200
+
+    oppdatering5
+
+commit c5b1b222a5856cef81f31e16d3f61faaef2ca761
+Author: Nora <nbergseth@live.no>
+Date:   Sat Jun 1 17:57:03 2019 +0200
+
+    oppdatering4
+
+commit 363c4c3bdd4ccb449fd54d6952b22fe477961568
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Sat Jun 1 17:23:43 2019 +0200
+
+    "Save Changes" function active
+
+commit 2aac6ed1a55886c1e3c74ebc3ffb20b0b76e153b
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 22:30:58 2019 +0200
+
+    oppdatering3
+
+commit 096e6f8abc9515c5d27a5eaac1e8bf96bd48ae7f
+Merge: 73bd316 e726d4d
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 20:07:05 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 73bd3165332d5ebb885b6aa0eed2d24b6279fef0
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 19:53:32 2019 +0200
+
+    oppdatering2
+
+commit ee7d1725a1ee0faba83a193bb994e114aa91c4b0
+Merge: 6a7b35a e726d4d
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri May 31 16:02:56 2019 +0200
+
+    Merge branch 'master' into Herman
+
+commit 6a7b35af2b3416337e4dc01a6dea09b9eea26dd1
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri May 31 16:01:44 2019 +0200
+
+    Navbar link
+
+commit e726d4d2df41ea07b5d341983ef6360ec8b686b4
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Fri May 31 14:10:52 2019 +0200
+
+    Update profil.html
+
+    navbar button working
+    modal button working
+    other minor fix
+
+commit cda5d4faa4a1c3b0e5d1b9246f9477bae235e4bb
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Fri May 31 13:30:37 2019 +0200
+
+    Update profil.css
+
+commit ae0997b9af523f65ffc9a1e1d9430adc00db9dfe
+Merge: 5c65016 e59e5ab
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Fri May 31 13:22:52 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 5c650165247595236144b563e9fd4dc4a6244e1b
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Fri May 31 13:22:46 2019 +0200
+
+    user icon updated
+
+commit e59e5ab31e546bf93b24b8f84b17c4160fa86d5f
+Merge: 431a2c9 ee19344
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Fri May 31 13:18:32 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit 431a2c93c9be688fea0bfee3471ca8dee93e0b02
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Fri May 31 13:18:29 2019 +0200
+
+    Update
+
+commit ee19344f10066c87ce88c386c0a35f2c2ecb2c62
+Merge: d6d79fc 9de0b80
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 13:04:49 2019 +0200
+
+    Merge branch 'master' of https://github.com/Nitroduck/Webprosjekt-Gruppe-3
+
+commit d6d79fca0277f06c5adeb0c1764f0077968eec96
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 13:04:42 2019 +0200
+
+    oppdatering1
+
+commit 9de0b8087522ddf880766d3dd1803686d5449657
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri May 31 12:36:28 2019 +0200
+
+    Pathing
+
+    Oppdatert href
+
+commit ad9485f6cf99870b05fdac069ae6466477ff06c2
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 12:31:23 2019 +0200
+
+    Upload - images
+
+commit 17bd635b03733fdf3a8d9ebc0e45c32d3b447591
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri May 31 12:30:12 2019 +0200
+
+    Tweaks
+
+    Path til css/js-mapper
+
+commit 3b63ee5b88586f85e72da7c2f06426bc8139b5e1
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Fri May 31 12:16:46 2019 +0200
+
+    Upload Ole
+
+commit 66a6e896b310acc04c31c8b0b1e90f360e212574
+Author: Nora <nbergseth@live.no>
+Date:   Fri May 31 12:11:02 2019 +0200
+
+    Upload
+
+commit 78d6d2c1322cea64417970ab00133121e1f835a2
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Fri May 31 12:06:20 2019 +0200
+
+    Clean 2
+
+    Omstrukturering
+
+commit 7202ade5b99cb4feed080d98a9e9fb0eb06aafe7
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu May 30 23:41:01 2019 +0200
+
+    Removal
+
+    Fjernet un<C3><B8>dvendig zip
+
+commit 335a5f792625434e47c0ec96896685fc06c5b035 (Herm)
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Thu May 30 22:44:14 2019 +0200
+
+    Board and navbar full version
+
+    Navbar mal ferdig.)
+
+commit 510f622cfdc367d86c710167bd09f74cee2eae7d
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu May 30 19:39:06 2019 +0200
+
+    Kalender
+
+commit 7c740b389c06a11078ece16afe9e2576b9a458ab
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Wed May 29 21:53:09 2019 +0200
+
+    Underveis update - Menu
+
+    Endret struktur og inkludert responsive kode, men ikke ferdig..
+
+commit 6c0cc33a7771d0fba1ba2bc3ef291c256bd40fa1
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed May 29 17:58:34 2019 +0200
+
+    Clean
+
+    Fjernet un<C3><B8>dvendigheter
+
+commit 4faf4fd49e65028dd27801d00d41e396ee685c1d
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed May 29 17:57:17 2019 +0200
+
+    Revert "Revert "Delete profil.html""
+
+    This reverts commit de9068667cb3c4f660d11ed456b472b05bbe97e9.
+
+commit de9068667cb3c4f660d11ed456b472b05bbe97e9
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed May 29 17:56:00 2019 +0200
+
+    Revert "Delete profil.html"
+
+    This reverts commit df4d81773bae7c1c50dc0a719433cd22904eeb1a.
+
+commit 154da34de739aaaf3a0c86b70dce2e30e0f28cf5
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed May 29 17:55:25 2019 +0200
+
+    Revert "Clean-up"
+
+    This reverts commit c5750c5da75304b49321a23986246e4acad32111.
+
+commit c5750c5da75304b49321a23986246e4acad32111
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Wed May 29 17:54:14 2019 +0200
+
+    Clean-up
+
+commit df4d81773bae7c1c50dc0a719433cd22904eeb1a
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue May 28 13:05:28 2019 +0200
+
+    Delete profil.html
+
+commit 8cff489bd2d75e8a0cd36ca9dcaf1d4825218209
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue May 28 13:04:15 2019 +0200
+
+    firstcommit
+
+commit 565a63af8c68252ac810527e18cd07fbb06d40d7
+Merge: 0212ea1 99c5c2c
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue May 28 12:45:47 2019 +0200
+
+    Merge branch 'Profil'
+
+commit 99c5c2c9587a082373d42f9038cfa8aedbf3d38d (Profil)
+Author: otobiasn <oletobias3397@gmail.com>
+Date:   Tue May 28 12:37:55 2019 +0200
+
+    Create profil.html
+
+commit 0212ea178ed8640b55886c1d619462e3c2eed323
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue May 28 12:35:17 2019 +0200
+
+    Skisse update
+
+commit ebeef111bb8312399f0fd2c59dba115618ea0429
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue May 28 12:33:19 2019 +0200
+
+    Kode (board) - Martin
+
+commit e296acd0eda3831102876d96515b16ba3370d4e6
+Author: remmar18 <ps3-martinremme@hotmail.no>
+Date:   Tue May 28 12:30:44 2019 +0200
+
+    Skisse update
+
+commit 9faf4011657d055996845ef6f8416505fb9cf4ee (nora)
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Mon May 27 23:11:09 2019 +0200
+
+    Libraries, mockup
+
+commit 22bc07ee2ee608b43177c8598e8b934130e60928
+Author: Herman H <htharlem@mail.com>
+Date:   Mon May 27 12:36:35 2019 +0200
+
+    Skisser
+
+commit 9975d2c0056af0e40fbe296e6f41a12651b7515b
+Author: Herman H <htharlem@mail.com>
+Date:   Fri May 24 14:23:57 2019 +0200
+
+    First commit
+
+commit d11c58f786fb553648bff3eca99ab95e65b6a8eb
+Author: Nitroduck <42619350+Nitroduck@users.noreply.github.com>
+Date:   Thu May 23 11:44:59 2019 +0200
+
+    Initial commit
+(END)
