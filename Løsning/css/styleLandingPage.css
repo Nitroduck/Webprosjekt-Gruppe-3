@@ -11,8 +11,6 @@ body {
 
 }
 
-#topBar {}
-
 /*logo pic in the top bar*/
 #logo {
     height: 40px;
@@ -70,17 +68,17 @@ body {
 /*Background pic with the check symbol*/
 #pic {
     left: 100px;
-    top: 80px;
+    top: 160px;
     z-index: 1;
     opacity: 0.15;
-    width: 450px;
+    width: 500px;
     position: sticky;
 }
 
-/*illustration of the girl*/
+/*illustration of the student*/
 #illustration {
-    left: 720px;
-    width: 40%;
+    left: 730px;
+    width: 37%;
     top: 130px;
 }
 
@@ -90,28 +88,28 @@ body {
 }
 
 #study {
-    top: 100px;
+    top: 160px;
     left: 100px;
     font-family: 'Open sans', sans-serif;
     color: rgb(170, 170, 170);
 }
 
 #smarter {
-    top: 100px;
+    top: 160px;
     left: 340px;
     font-family: 'Open sans', sans-serif;
     color: #022f42
 }
 
 #get {
-    top: 200px;
+    top: 260px;
     left: 80px;
     font-family: 'Open sans', sans-serif;
     color: rgb(170, 170, 170);
 }
 
 #done {
-    top: 200px;
+    top: 260px;
     left: 480px;
     font-family: 'Open sans', sans-serif;
     color: #022f42;
@@ -119,8 +117,8 @@ body {
 
 #dummyText {
     position: absolute;
-    top: 350px;
-    left: 90px;
+    top: 420px;
+    left: 65px;
     width: 55%;
     color: rgb(133, 133, 133);
 }
@@ -129,8 +127,8 @@ body {
 
 /*email input*/
 #email {
-    top: 440px;
-    left: 90px;
+    top: 500px;
+    left: 70px;
 }
 
 #emailInput {
@@ -144,8 +142,8 @@ body {
 /*get started button*/
 #getStarted {
     position: absolute;
-    top: 440px;
-    left: 668px;
+    top: 500px;
+    left: 646px;
     height: 52px;
     width: 110px;
     color: #ffffff;
