@@ -1,4 +1,4 @@
-// Create a "close" button and append it to each list item
+// Creating a close button, append it to each item on list
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -9,7 +9,7 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Click on a close button to hide a list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -54,16 +54,3 @@ function newElement() {
         }
     }
 }
-
-/*scroll function --- funker ikke.
-
-window.onscroll = function () {
-    myFunction()
-};
-
-function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
- */
